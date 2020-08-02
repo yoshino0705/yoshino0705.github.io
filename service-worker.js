@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/yoshinobhl-site/precache-manifest.12049924a06a21b7d33ed38cd59509b3.js"
+  "/yoshinobhl-site/precache-manifest.a337a397d72613efee31e96c8362852d.js"
 );
 
 self.addEventListener('message', (event) => {
