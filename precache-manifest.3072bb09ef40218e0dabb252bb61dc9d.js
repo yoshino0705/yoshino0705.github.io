@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "acb00182940033b40c22d847fe8ac3d0",
+    "revision": "ce60b2b4140248c6f3a4fe15cdfc973e",
     "url": "/yoshinobhl-site/index.html"
   },
   {
-    "revision": "93421ac54f1179883100",
+    "revision": "2c813d01addca303c953",
     "url": "/yoshinobhl-site/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "6df861e628fb3d0529c9",
-    "url": "/yoshinobhl-site/static/js/2.d2e3b06c.chunk.js"
+    "revision": "6730fb28d382505c0d08",
+    "url": "/yoshinobhl-site/static/js/2.4cdba8f2.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/yoshinobhl-site/static/js/2.d2e3b06c.chunk.js.LICENSE.txt"
+    "url": "/yoshinobhl-site/static/js/2.4cdba8f2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "93421ac54f1179883100",
-    "url": "/yoshinobhl-site/static/js/main.ba387cff.chunk.js"
+    "revision": "2c813d01addca303c953",
+    "url": "/yoshinobhl-site/static/js/main.636ee23f.chunk.js"
   },
   {
     "revision": "e1c9f54bccaadd36e523",
