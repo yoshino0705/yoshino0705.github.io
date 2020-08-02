@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/yoshinobhl-site/static/css/main.5f361e03.chunk.css",
+    "main.js": "/yoshinobhl-site/static/js/main.5c92d6e9.chunk.js",
+    "main.js.map": "/yoshinobhl-site/static/js/main.5c92d6e9.chunk.js.map",
+    "runtime-main.js": "/yoshinobhl-site/static/js/runtime-main.494352fc.js",
+    "runtime-main.js.map": "/yoshinobhl-site/static/js/runtime-main.494352fc.js.map",
+    "static/js/2.970f41f7.chunk.js": "/yoshinobhl-site/static/js/2.970f41f7.chunk.js",
+    "static/js/2.970f41f7.chunk.js.map": "/yoshinobhl-site/static/js/2.970f41f7.chunk.js.map",
+    "index.html": "/yoshinobhl-site/index.html",
+    "precache-manifest.12049924a06a21b7d33ed38cd59509b3.js": "/yoshinobhl-site/precache-manifest.12049924a06a21b7d33ed38cd59509b3.js",
+    "service-worker.js": "/yoshinobhl-site/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/yoshinobhl-site/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.970f41f7.chunk.js.LICENSE.txt": "/yoshinobhl-site/static/js/2.970f41f7.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/yoshinobhl-site/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.494352fc.js",
+    "static/js/2.970f41f7.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.5c92d6e9.chunk.js"
+  ]
+}
