@@ -6,12 +6,19 @@ import Paper from '@material-ui/core/Paper'
 
 const Page = (props) => {
   const {
+    className,
     children,
     elevation,
     title,
+    ...rest
   } = props
   return (
-    <Paper elevation={elevation}>
+    <Paper
+      className={className}
+      elevation={elevation}
+      square
+      {...rest}
+    >
       <Helmet>
         <title>{title}</title>
       </Helmet>
@@ -26,6 +33,7 @@ Page.defaultProps = {
 }
 
 Page.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.any,
   elevation: PropTypes.number,
   title: PropTypes.string,

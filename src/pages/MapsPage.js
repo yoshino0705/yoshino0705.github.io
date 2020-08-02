@@ -2,12 +2,12 @@ import React from 'react';
 
 import Page from '../components/Page'
 
-const home = () => {
+const MapsPage = () => {
   return (
-    <Page title="Home">
-      home
+    <Page title="Maps">
+      maps
     </Page>
   )
 }
 
-export default home;
+export default MapsPage;
