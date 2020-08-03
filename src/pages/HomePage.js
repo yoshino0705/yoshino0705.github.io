@@ -9,12 +9,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const HomePage = () => {
+const HomePage = (props) => {
+  const {
+    locale
+  } = props
+
   const classes = useStyles()
 
   return (
     <Page
       className={classes.root}
+      locale={locale}
       title="Home"
     >
       home

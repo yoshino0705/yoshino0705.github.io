@@ -1,13 +1,12 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 import Toolbar from '@material-ui/core/Toolbar'
-import Typography from '@material-ui/core/Typography'
-import Button from '@material-ui/core/Button'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
-import Grid from '@material-ui/core/Grid'
+import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import Slide from '@material-ui/core/Slide';
 import AppBar from '@material-ui/core/AppBar'
+
+import LanguageDropdown from './LanguageDropdown'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,27 +27,61 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#cd5c5c',
     height: theme.spacing(1),
     width: '100%'
-  }
+  },
+  toolbar: {
+    backgroundColor: '#000',
+    color: '#fff',
+    flexGrow: 1,
+    justifyContent: 'center'
+  },
 }));
+
+const HideOnScroll = (props) => {
+  const { children, window } = props;
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  const trigger = useScrollTrigger({ target: window ? window() : undefined });
+
+  return (
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  );
+}
 
 const Header = (props) => {
   const {
-    locale
+    locale,
+    onChangeLocale
   } = props
-  console.log(locale)
+
   const classes = useStyles()
 
   return (
-    <AppBar position="static">
-      <div className={classes.darkRedBlock} />
-      <div className={classes.redBlock} />
-      <Toolbar>
+    <React.Fragment>
+      <HideOnScroll {...props}>
+        <AppBar position="static">
+          <div className={classes.darkRedBlock} />
+          <div className={classes.redBlock} />
+          <Toolbar className={classes.toolbar} >
+            <LanguageDropdown
+              locale={locale}
+              onChangeLocale={onChangeLocale}
+            />
+          </Toolbar>
+          <div className={classes.redBlock} />
+          <div className={classes.darkRedBlock} />
+        </AppBar>
+      </HideOnScroll>
+    </React.Fragment>
 
-      </Toolbar>
-      <div className={classes.redBlock} />
-      <div className={classes.darkRedBlock} />
-    </AppBar>
   )
+}
+
+Header.propTypes = {
+  locale: PropTypes.string,
+  onChangeLocale: PropTypes.func
 }
 
 export default Header

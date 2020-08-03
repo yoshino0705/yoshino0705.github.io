@@ -10,12 +10,20 @@ class App extends Component {
     this.state = {
       locale: 'zh-TW'
     }
+    this.handleChangeLocale = this.handleChangeLocale.bind(this)
+  }
+
+  handleChangeLocale(locale) {
+    this.setState({ locale: locale })
   }
 
   render() {
     return (
       <div style={{ height: '100%' }}>
-        <Header locale={this.state.locale} />
+        <Header
+          locale={this.state.locale}
+          onChangeLocale={this.handleChangeLocale}
+        />
         <Content locale={this.state.locale} />
       </div>
     )

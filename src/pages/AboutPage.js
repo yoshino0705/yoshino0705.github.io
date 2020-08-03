@@ -2,9 +2,16 @@ import React from 'react'
 
 import Page from '../components/Page'
 
-const AboutPage = () => {
+const AboutPage = (props) => {
+  const {
+    locale
+  } = props
+
   return (
-    <Page title="About">
+    <Page
+      locale={locale}
+      title="About"
+    >
       About
     </Page>
   )
