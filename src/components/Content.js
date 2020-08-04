@@ -6,10 +6,8 @@ import HomePage from '../pages/HomePage'
 import AboutPage from '../pages/AboutPage'
 import MapsPage from '../pages/MapsPage'
 
-import GA from '../utils/GoogleAnalytics'
-
 const Content = () => {
-  /* {GA.init() && <GA.RouteTracker />} */
+
   return (
     < Switch >
       <Route exact path="/" component={() => <HomePage />} />
