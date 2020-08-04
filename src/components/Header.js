@@ -3,10 +3,12 @@ import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 import Toolbar from '@material-ui/core/Toolbar'
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import Grid from '@material-ui/core/Grid'
 import Slide from '@material-ui/core/Slide';
 import AppBar from '@material-ui/core/AppBar'
 
 import LanguageDropdown from './LanguageDropdown'
+import Navigations from './Navigations'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
   toolbar: {
     backgroundColor: '#000',
     color: '#fff',
-    flexGrow: 1,
     justifyContent: 'center'
   },
 }));
@@ -51,10 +52,6 @@ const HideOnScroll = (props) => {
 }
 
 const Header = (props) => {
-  const {
-    locale,
-    onChangeLocale
-  } = props
 
   const classes = useStyles()
 
@@ -65,10 +62,22 @@ const Header = (props) => {
           <div className={classes.darkRedBlock} />
           <div className={classes.redBlock} />
           <Toolbar className={classes.toolbar} >
-            <LanguageDropdown
-              locale={locale}
-              onChangeLocale={onChangeLocale}
-            />
+            <Grid container>
+              <Grid
+                item
+                md={9}
+                xs={8}
+              >
+                <Navigations />
+              </Grid>
+              <Grid
+                item
+                md={3}
+                xs={4}
+              >
+                <LanguageDropdown />
+              </Grid>
+            </Grid>
           </Toolbar>
           <div className={classes.redBlock} />
           <div className={classes.darkRedBlock} />

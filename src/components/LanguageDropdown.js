@@ -18,7 +18,6 @@ import { setLocale } from '../actions'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -70,7 +69,7 @@ const LanguageDropdown = () => {
   };
 
   return (
-    <div>
+    <div className={classes.root}>
       <IconButton
         className={classes.iconButton}
         onClick={handleClick}

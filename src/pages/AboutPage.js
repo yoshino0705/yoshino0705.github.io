@@ -9,7 +9,6 @@ const AboutPage = (props) => {
 
   return (
     <Page
-      locale={locale}
       title="About"
     >
       About

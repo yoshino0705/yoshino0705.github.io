@@ -19,7 +19,6 @@ const HomePage = (props) => {
   return (
     <Page
       className={classes.root}
-      locale={locale}
       title="Home"
     >
       home
