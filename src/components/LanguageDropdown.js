@@ -1,4 +1,5 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 
@@ -12,6 +13,8 @@ import Typography from '@material-ui/core/Typography'
 
 import { LANGUAGES } from './constants'
 import keys from 'lodash/keys'
+
+import { setLocale } from '../actions'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -43,13 +46,11 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const LanguageDropdown = (props) => {
-  const {
-    locale,
-    onChangeLocale
-  } = props
+const LanguageDropdown = () => {
 
   const classes = useStyles()
+  const dispatch = useDispatch()
+  const language = useSelector(state => state.language)
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -60,7 +61,7 @@ const LanguageDropdown = (props) => {
   };
 
   const onChange = (option) => {
-    onChangeLocale(option)
+    dispatch(setLocale(option))
     handleClose()
   }
 
@@ -77,7 +78,7 @@ const LanguageDropdown = (props) => {
         <Translate />
 
         <Typography className={classes.locale}>
-          {LANGUAGES[locale]}
+          {LANGUAGES[language.locale]}
         </Typography>
 
         <KeyboardArrowDownIcon />
@@ -92,7 +93,7 @@ const LanguageDropdown = (props) => {
         {options.map((option) => (
           <MenuItem
             key={option}
-            selected={option === locale}
+            selected={option === language.locale}
             onClick={() => { onChange(option) }}
           >
             {LANGUAGES[option]}
@@ -104,8 +105,7 @@ const LanguageDropdown = (props) => {
 }
 
 LanguageDropdown.propTypes = {
-  locale: PropTypes.string,
-  onChangeLocale: PropTypes.func
+
 }
 
 export default LanguageDropdown

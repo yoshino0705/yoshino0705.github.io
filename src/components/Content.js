@@ -14,7 +14,7 @@ const Content = (props) => {
 
   return (
     <Router basename="/">
-      {GA.init() && <GA.RouteTracker />}
+      {/* {GA.init() && <GA.RouteTracker />} */}
       <Switch>
         <Route exact path="/" component={() => <HomePage locale={locale} />} />
         <Route path="/home" component={() => <HomePage locale={locale} />} />

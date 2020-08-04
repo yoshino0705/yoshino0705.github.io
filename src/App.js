@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
 import Header from './components/Header'
 import Content from './components/Content'
@@ -19,7 +20,7 @@ class App extends Component {
 
   render() {
     return (
-      <div style={{ height: '100%' }}>
+      <div>
         <Header
           locale={this.state.locale}
           onChangeLocale={this.handleChangeLocale}
@@ -30,4 +31,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect()(App)

@@ -1,29 +1,24 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 
 import Paper from '@material-ui/core/Paper'
-import get from 'lodash/get'
-import keys from 'lodash/keys'
-import includes from 'lodash/includes'
-import isEmpty from 'lodash/isEmpty'
+import { TITLES } from './constants'
 
-import { TITLE } from './constants'
+import get from 'lodash/get'
 
 const Page = (props) => {
   const {
     className,
     children,
     elevation,
-    locale,
     title,
     ...rest
   } = props
 
-  let titleLabel = title
-  if (!isEmpty(locale) && includes(keys(TITLE), locale)) {
-    titleLabel = get(TITLE[locale], title) || title
-  }
+  const language = useSelector(state => state.language)
+  const titleLabel = get(TITLES[language.locale], title)
 
   return (
     <Paper

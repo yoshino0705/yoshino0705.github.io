@@ -4,16 +4,16 @@ export const LANGUAGES = {
 }
 
 const TITLE_ZH_TW = {
-  'Home': '主頁',
-  'About': '關於'
+  'Home': '酷米家族',
+  'About': '家族成員'
 }
 
 const TITLE_EN_US = {
-  'Home': 'Home',
-  'About': 'About'
+  'Home': 'Koumi Family',
+  'About': 'Members'
 }
 
-export const TITLE = {
+export const TITLES = {
   'zh-TW': TITLE_ZH_TW,
   'en-US': TITLE_EN_US
 }
