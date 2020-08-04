@@ -1,6 +1,5 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 
 import Menu from '@material-ui/core/Menu'
@@ -10,6 +9,7 @@ import Translate from '@material-ui/icons/Translate'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 import Typography from '@material-ui/core/Typography'
+import Hidden from '@material-ui/core/Hidden'
 
 import { LANGUAGES } from './constants'
 import keys from 'lodash/keys'
@@ -74,7 +74,9 @@ const LanguageDropdown = () => {
         className={classes.iconButton}
         onClick={handleClick}
       >
-        <Translate />
+        <Hidden xsDown>
+          <Translate />
+        </Hidden>
 
         <Typography className={classes.locale}>
           {LANGUAGES[language.locale]}

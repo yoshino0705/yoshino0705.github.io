@@ -9,10 +9,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const HomePage = (props) => {
-  const {
-    locale
-  } = props
+const HomePage = () => {
 
   const classes = useStyles()
 
@@ -21,7 +18,7 @@ const HomePage = (props) => {
       className={classes.root}
       title="Home"
     >
-      home
+      Home Page
     </Page>
   )
 }

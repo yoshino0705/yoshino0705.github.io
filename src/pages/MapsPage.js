@@ -5,7 +5,7 @@ import Page from '../components/Page'
 const MapsPage = () => {
   return (
     <Page title="Maps">
-      maps
+      Maps Page
     </Page>
   )
 }

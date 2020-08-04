@@ -5,11 +5,9 @@ import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 
 import Grid from '@material-ui/core/Grid'
-import Menu from '@material-ui/core/Menu'
-import MenuItem from '@material-ui/core/MenuItem'
 import Typography from '@material-ui/core/Typography'
 import IconButton from '@material-ui/core/IconButton'
-import { NAVIGATIONS } from './constants'
+import { TITLES } from './constants'
 
 import friedshrimp from './assets/friedshrimp.png'
 
@@ -48,7 +46,7 @@ const Navigations = (props) => {
 
   const classes = useStyles()
   const language = useSelector(state => state.language)
-  const options = map(NAVIGATIONS[language.locale], (val, key) => {
+  const options = map(TITLES[language.locale], (val, key) => {
     return { label: val, path: key }
   })
 

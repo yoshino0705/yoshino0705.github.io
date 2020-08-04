@@ -5,32 +5,17 @@ export const LANGUAGES = {
 
 const TITLE_ZH_TW = {
   'Home': '酷米家族',
-  'About': '家族成員'
-}
-
-const TITLE_EN_US = {
-  'Home': 'Koumi Family',
-  'About': 'Members'
-}
-
-export const TITLES = {
-  'zh-TW': TITLE_ZH_TW,
-  'en-US': TITLE_EN_US
-}
-
-const NAV_ZH_TW = {
-  'Home': '酷米家族主頁',
   'Members': '家族成員',
   'Maps': '作品介紹'
 }
 
-const NAV_EN_US = {
+const TITLE_EN_US = {
   'Home': 'Koumi Family',
   'Members': 'Members',
   'Maps': 'Minecraft Maps'
 }
 
-export const NAVIGATIONS = {
-  'zh-TW': NAV_ZH_TW,
-  'en-US': NAV_EN_US
+export const TITLES = {
+  'zh-TW': TITLE_ZH_TW,
+  'en-US': TITLE_EN_US
 }
