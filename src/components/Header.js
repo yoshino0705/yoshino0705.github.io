@@ -57,32 +57,32 @@ const Header = (props) => {
 
   return (
     <React.Fragment>
-      <HideOnScroll {...props}>
-        <AppBar position="static">
-          <div className={classes.darkRedBlock} />
-          <div className={classes.redBlock} />
-          <Toolbar className={classes.toolbar} >
-            <Grid container>
-              <Grid
-                item
-                md={9}
-                xs={8}
-              >
-                <Navigations />
-              </Grid>
-              <Grid
-                item
-                md={3}
-                xs={4}
-              >
-                <LanguageDropdown />
-              </Grid>
+
+      <AppBar position="static">
+        <div className={classes.darkRedBlock} />
+        <div className={classes.redBlock} />
+        <Toolbar className={classes.toolbar} >
+          <Grid container>
+            <Grid
+              item
+              md={9}
+              xs={8}
+            >
+              <Navigations />
             </Grid>
-          </Toolbar>
-          <div className={classes.redBlock} />
-          <div className={classes.darkRedBlock} />
-        </AppBar>
-      </HideOnScroll>
+            <Grid
+              item
+              md={3}
+              xs={4}
+            >
+              <LanguageDropdown />
+            </Grid>
+          </Grid>
+        </Toolbar>
+        <div className={classes.redBlock} />
+        <div className={classes.darkRedBlock} />
+      </AppBar>
+
     </React.Fragment>
 
   )

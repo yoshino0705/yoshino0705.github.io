@@ -1,12 +1,18 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles'
 import Page from '../components/Page'
+import friedshrimp from '../components/assets/friedshrimp.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#808080",
-    // height: '100vh'
+    backgroundColor: 'rgba(223, 169, 169, 0.50)',
+    position: 'relative',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundImage: `url(${friedshrimp})`,
+    height: '150vh'
   },
+
 }));
 
 const HomePage = () => {
@@ -18,6 +24,7 @@ const HomePage = () => {
       className={classes.root}
       title="Home"
     >
+
       Home Page
     </Page>
   )
