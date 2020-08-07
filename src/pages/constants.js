@@ -16,7 +16,7 @@ const EN_US = {
   koumi: 'The Koumi Family\'s',
   welcome: 'Welcome to',
   website: 'Website',
-  introduction: 'We met each other on an online chat group, one day out of nowhere someone proposed the idea of making a Minecraft multiplayer map, which turned out that we also had members who were familiar with building and commands, and this is how our first ever creation was born:',
+  introduction: 'We met each other in an online chat group, one day out of nowhere someone proposed the idea of making a Minecraft multiplayer map, which turned out we happened to have members who were familiar with building and commands, and this is how our first ever creation was born:',
   werewolf: 'The Werewolf Game',
   werewolf_note: 'Similar to Town of Salem, but with different roles, abilities, and playstyle deviations'
 }
