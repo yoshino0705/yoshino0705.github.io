@@ -18,28 +18,51 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundImage: `url(${friedshrimp})`,
-    height: '150vh',
+
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    [theme.breakpoints.up('md')]: {
+      height: '150vh'
+    },
+    [theme.breakpoints.down('sm')]: {
+      height: '100vh'
+    },
+
   },
   container: {
     padding: theme.spacing(3)
   },
   card: {
+    [theme.breakpoints.up('md')]: {
+      width: 600
+    },
+    [theme.breakpoints.down('sm')]: {
+      width: 300
+    },
     backgroundColor: 'rgba(223, 169, 169, 0.70)',
     borderRadius: 12,
-    width: 600
+
   },
   card2: {
+    [theme.breakpoints.up('md')]: {
+      width: 600
+    },
+    [theme.breakpoints.down('sm')]: {
+      width: 300
+    },
     backgroundColor: 'rgba(38, 242, 242, 0.70)',
     borderRadius: 12,
     width: 600
   },
   family: {
     fontWeight: 800,
-    color: '#FF6200'
+    color: '#FF6200',
+    fontSize: 72,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 54
+    },
   },
   text: {
     color: '#A63F00'
