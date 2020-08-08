@@ -10,6 +10,8 @@ import { ABOUT_PAGE_CONTENT } from './constants'
 
 import MemberPanel from '../components/MemberPanel'
 import yoshinoIcon from '../components/assets/member_icons/yoshinobhl.jpg'
+import eveIcon from '../components/assets/member_icons/eve.jpg'
+import slgameIcon from '../components/assets/member_icons/slgame.jpg'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -101,10 +103,33 @@ const AboutPage = () => {
           item
         >
           <MemberPanel
-            description={content.yoshinobhl.description}
-            icon={yoshinoIcon}
-            name={content.yoshinobhl.name}
-            themeColor="rgba(28, 246, 144, 0.7)"
+            description={content.eve.description}
+            icon={eveIcon}
+            name={content.eve.name}
+            themeColor="rgba(241, 130, 227, 0.7)"
+            reverse
+          />
+        </Grid>
+        <Grid
+          className={classes.forward}
+          item
+        >
+          <MemberPanel
+            description={content.koumi.description}
+            icon={slgameIcon}
+            name={content.koumi.name}
+            themeColor="rgba(255, 165, 0, 0.7)"
+          />
+        </Grid>
+        <Grid
+          className={classes.reverse}
+          item
+        >
+          <MemberPanel
+            description={content.slgame.description}
+            icon={slgameIcon}
+            name={content.slgame.name}
+            themeColor="rgba(130, 227, 241, 0.7)"
             reverse
           />
         </Grid>
