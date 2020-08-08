@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   },
   langSelect: {
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'flex-end'
   }
 }));
 

@@ -44,6 +44,9 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     width: '100%'
+  },
+  option: {
+    display: 'flex'
   }
 }));
 
@@ -71,6 +74,7 @@ const Navigations = (props) => {
       {
         map(options, (o, i) =>
           <Grid
+            className={classes.option}
             item
             key={i}
           >
