@@ -19,10 +19,12 @@ import includes from 'lodash/includes'
 const useStyles = makeStyles((theme) => ({
   root: {
     [theme.breakpoints.up('md')]: {
-      justifyContent: 'center'
+      justifyContent: 'center',
+      flexDirection: 'row'
     },
     [theme.breakpoints.down('sm')]: {
-      justifyContent: 'normal'
+      justifyContent: 'center',
+      flexDirection: 'column'
     },
   },
   icon: {

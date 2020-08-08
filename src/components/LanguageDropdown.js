@@ -74,9 +74,7 @@ const LanguageDropdown = () => {
         className={classes.iconButton}
         onClick={handleClick}
       >
-        <Hidden xsDown>
-          <Translate />
-        </Hidden>
+        <Translate />
 
         <Typography className={classes.locale}>
           {LANGUAGES[language.locale]}

@@ -35,6 +35,10 @@ const useStyles = makeStyles((theme) => ({
     color: '#fff',
     justifyContent: 'center'
   },
+  langSelect: {
+    display: 'flex',
+    justifyContent: 'center'
+  }
 }));
 
 // const HideOnScroll = (props) => {
@@ -62,18 +66,22 @@ const Header = (props) => {
         <div className={classes.darkRedBlock} />
         <div className={classes.redBlock} />
         <Toolbar className={classes.toolbar} >
-          <Grid container>
+          <Grid
+            container
+            justify="center"
+          >
             <Grid
               item
               md={9}
-              xs={8}
+              sm={6}
             >
               <Navigations />
             </Grid>
             <Grid
+              className={classes.langSelect}
               item
               md={3}
-              xs={4}
+              sm={6}
             >
               <LanguageDropdown />
             </Grid>

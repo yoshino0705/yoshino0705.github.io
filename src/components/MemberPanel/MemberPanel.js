@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
       width: 600
     },
     [theme.breakpoints.down('sm')]: {
-      width: 'auto'
+      width: '100%'
     },
     backgroundColor: 'rgba(223, 169, 169, 0.70)',
     borderRadius: 12,

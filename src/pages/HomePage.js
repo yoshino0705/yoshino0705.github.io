@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     [theme.breakpoints.up('md')]: {
-      minHeight: '150vh'
+      minHeight: '100vh'
     },
     [theme.breakpoints.down('sm')]: {
       minHeight: '100vh'
