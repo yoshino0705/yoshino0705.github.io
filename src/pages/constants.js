@@ -32,11 +32,11 @@ export const HOME_PAGE_CONTENT = {
 const ABOUT_ZH_TW = {
   yoshinobhl: {
     name: '藍髮蘿莉四糸乃',
-    description: '酷米家族主要指令師、兼地圖規劃、兼本網站架設+設計者。翻譯也是我'
+    description: 'Minecraft 指令師、兼地圖規劃、兼本網站架設+設計者、兼翻譯'
   },
   eve: {
     name: '伊然 (Eve)',
-    description: '酷米家族的地圖規劃、大多點子的來源，我們尊稱為大姐'
+    description: 'Minecraft 地圖規劃、大多點子的來源，我們尊稱為大姐'
   },
   slgame: {
     name: 'SL',
@@ -45,13 +45,29 @@ const ABOUT_ZH_TW = {
   koumi: {
     name: '酷米',
     description: '酷米家族大團長，團隊名的由來，最愛炸蝦，是本家族的精神象徵'
+  },
+  lightDe: {
+    name: '小滴',
+    description: 'Minecraft 建築師，我們的地圖創作內所有精美的建築和布景都是小滴蓋的'
+  },
+  allen: {
+    name: '熊貓',
+    description: 'Minecraft 伺服器架設擔當者'
+  },
+  alex: {
+    name: '蘑菇',
+    description: '本群母湯擔當'
+  },
+  yoru: {
+    name: '夜',
+    description: '頭像永遠是空的'
   }
 }
 
 const ABOUT_EN_US = {
   yoshinobhl: {
     name: 'YoshinoBHL',
-    description: 'Minecraft command expert, map creation planning, and the developer of this website. I\'m also the one who did the translation here.'
+    description: 'Minecraft command expert, map creation planning, the developer of this website, and the translator.'
   },
   eve: {
     name: 'Eve',
@@ -64,8 +80,23 @@ const ABOUT_EN_US = {
   koumi: {
     name: 'Koumi',
     description: 'The spiritual leader of the group, the origin of the Family name, loves Japanese fried shrimp, and is the symbol of The Koumi Family.'
+  },
+  lightDe: {
+    name: 'Light De',
+    description: 'Minecraft building expert, all of the great landscapes and beautiful structures in our map creations are all done by Light De.'
+  },
+  allen: {
+    name: 'Allen',
+    description: 'Minecraft server operator.'
+  },
+  alex: {
+    name: 'Kinoko Neko (Alex)',
+    description: 'The one guy that always goes off topic in a bizzare direction.'
+  },
+  yoru: {
+    name: 'Yoru',
+    description: 'Always uses the default profile icon.'
   }
-
 }
 
 export const ABOUT_PAGE_CONTENT = {

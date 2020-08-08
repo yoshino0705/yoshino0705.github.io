@@ -12,10 +12,14 @@ import get from 'lodash/get'
 import map from 'lodash/map'
 
 import MemberPanel from '../components/MemberPanel'
+
 import yoshinoIcon from '../components/assets/member_icons/yoshinobhl.jpg'
 import eveIcon from '../components/assets/member_icons/eve.jpg'
 import slgameIcon from '../components/assets/member_icons/slgame.jpg'
 import koumiIcon from '../components/assets/member_icons/koumi2.jpg'
+import lightDeIcon from '../components/assets/member_icons/lightDe.jpg'
+import alexIcon from '../components/assets/member_icons/alex.jpg'
+import yoruIcon from '../components/assets/member_icons/yoru.jpg'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -97,10 +101,34 @@ const MembersPage = () => {
       theme: 'rgba(255, 165, 0, 0.7)'
     },
     {
+      description: get(content, 'lightDe.description'),
+      name: get(content, 'lightDe.name'),
+      icon: lightDeIcon,
+      theme: 'rgba(191, 63, 127, 0.7)'
+    },
+    {
       description: get(content, 'slgame.description'),
       name: get(content, 'slgame.name'),
       icon: slgameIcon,
       theme: 'rgba(130, 227, 241, 0.7)'
+    },
+    {
+      description: get(content, 'allen.description'),
+      name: get(content, 'allen.name'),
+      icon: null,
+      theme: 'rgba(170, 170, 252, 0.7)'
+    },
+    {
+      description: get(content, 'alex.description'),
+      name: get(content, 'alex.name'),
+      icon: alexIcon,
+      theme: 'rgba(127, 191, 63, 0.7)'
+    },
+    {
+      description: get(content, 'yoru.description'),
+      name: get(content, 'yoru.name'),
+      icon: yoruIcon,
+      theme: 'rgba(52, 253, 253, 0.7)'
     }
   ]
 
@@ -126,7 +154,7 @@ const MembersPage = () => {
                 in
                 key={i}
                 mountOnEnter
-                timeout={(i + 1) * 900}
+                timeout={(i + 1) * 500}
               >
                 <Grid
                   className={reverse ? classes.reverse : classes.forward}
