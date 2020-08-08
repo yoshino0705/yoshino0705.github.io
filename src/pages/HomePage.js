@@ -86,7 +86,7 @@ const HomePage = () => {
     <Page
       className={classes.root}
       elevation={24}
-      title="Home"
+      title="home"
     >
       <Card
         className={classes.card}

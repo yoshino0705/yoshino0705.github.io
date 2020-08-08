@@ -4,15 +4,15 @@ export const LANGUAGES = {
 }
 
 const TITLE_ZH_TW = {
-  'Home': '酷米家族',
-  'Members': '家族成員',
-  'Maps': '作品介紹'
+  'home': '酷米家族',
+  'members': '家族成員',
+  'maps': '作品介紹'
 }
 
 const TITLE_EN_US = {
-  'Home': 'Koumi Family',
-  'Members': 'Members',
-  'Maps': 'Minecraft Maps'
+  'home': 'Koumi Family',
+  'members': 'Members',
+  'maps': 'Minecraft Maps'
 }
 
 export const TITLES = {

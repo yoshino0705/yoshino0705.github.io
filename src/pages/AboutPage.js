@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
 
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
     [theme.breakpoints.up('md')]: {
       minHeight: '150vh'
     },
@@ -33,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   container: {
     padding: theme.spacing(3),
     maxWidth: 1000,
-    margin: 'auto auto'
+    margin: '0 auto'
   },
   family: {
     fontWeight: 800,
@@ -75,8 +74,11 @@ const AboutPage = () => {
     <Page
       className={classes.root}
       elevation={24}
-      title="Home"
+      title="members"
     >
+      <Grid container>
+
+      </Grid>
       <Grid
         className={classes.container}
         container
@@ -88,9 +90,9 @@ const AboutPage = () => {
           item
         >
           <MemberPanel
-            description="酷米家族主要指令師兼地圖規劃兼本網站架設者"
+            description={content.yoshinobhl.description}
             icon={yoshinoIcon}
-            name="藍髮蘿莉四糸乃"
+            name={content.yoshinobhl.name}
             themeColor="rgba(28, 246, 144, 0.7)"
           />
         </Grid>
@@ -99,11 +101,11 @@ const AboutPage = () => {
           item
         >
           <MemberPanel
-            description="酷米家族主要指令師兼地圖規劃兼本網站架設者"
+            description={content.yoshinobhl.description}
             icon={yoshinoIcon}
-            name="藍髮蘿莉四糸乃"
-            reverse
+            name={content.yoshinobhl.name}
             themeColor="rgba(28, 246, 144, 0.7)"
+            reverse
           />
         </Grid>
       </Grid>

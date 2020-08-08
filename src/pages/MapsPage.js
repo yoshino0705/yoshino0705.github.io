@@ -22,7 +22,7 @@ const MapsPage = () => {
   return (
     <Page
       className={classes.root}
-      title="Maps"
+      title="maps"
     >
       Maps Page
     </Page>

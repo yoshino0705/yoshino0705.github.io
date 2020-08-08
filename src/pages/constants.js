@@ -30,11 +30,17 @@ export const HOME_PAGE_CONTENT = {
 // About Page Content
 
 const ABOUT_ZH_TW = {
-
+  yoshinobhl: {
+    name: '藍髮蘿莉四糸乃',
+    description: '酷米家族主要指令師、兼地圖規劃、兼本網站架設+設計者。翻譯也是我'
+  }
 }
 
 const ABOUT_EN_US = {
-
+  yoshinobhl: {
+    name: 'YoshinoBHL',
+    description: 'Minecraft command expert, map creation planning, and the developer of this website. I\'m also the one who did the translation here.'
+  }
 }
 
 export const ABOUT_PAGE_CONTENT = {
