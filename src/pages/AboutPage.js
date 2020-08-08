@@ -12,6 +12,7 @@ import MemberPanel from '../components/MemberPanel'
 import yoshinoIcon from '../components/assets/member_icons/yoshinobhl.jpg'
 import eveIcon from '../components/assets/member_icons/eve.jpg'
 import slgameIcon from '../components/assets/member_icons/slgame.jpg'
+import koumiIcon from '../components/assets/member_icons/koumi2.jpg'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -116,7 +117,7 @@ const AboutPage = () => {
         >
           <MemberPanel
             description={content.koumi.description}
-            icon={slgameIcon}
+            icon={koumiIcon}
             name={content.koumi.name}
             themeColor="rgba(255, 165, 0, 0.7)"
           />

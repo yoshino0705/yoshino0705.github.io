@@ -4,12 +4,12 @@ import { connect } from 'react-redux'
 import Header from './components/Header'
 import Content from './components/Content'
 
-import { Router } from 'react-router-dom'
+import { HashRouter as Router } from 'react-router-dom'
 
-import { createBrowserHistory } from "history";
+//import { createBrowserHistory } from "history";
 import GA from './utils/GoogleAnalytics'
 
-const history = createBrowserHistory();
+//const history = createBrowserHistory();
 
 class App extends Component {
 
@@ -20,7 +20,6 @@ class App extends Component {
     return (
       <Router
         basename="/"
-        history={history}
       >
         {PROD && <GA.RouteTracker />}
         <Header />
