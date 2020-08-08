@@ -5,8 +5,11 @@ import Page from '../components/Page'
 import friedshrimp from '../components/assets/friedshrimp.png'
 
 import Grid from '@material-ui/core/Grid'
+import Slide from '@material-ui/core/Slide'
 
 import { ABOUT_PAGE_CONTENT } from './constants'
+import get from 'lodash/get'
+import map from 'lodash/map'
 
 import MemberPanel from '../components/MemberPanel'
 import yoshinoIcon from '../components/assets/member_icons/yoshinobhl.jpg'
@@ -68,11 +71,38 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const AboutPage = () => {
+const MembersPage = () => {
 
   const classes = useStyles()
   const language = useSelector(state => state.language)
   const content = ABOUT_PAGE_CONTENT[language.locale]
+
+  const members = [
+    {
+      description: get(content, 'yoshinobhl.description'),
+      name: get(content, 'yoshinobhl.name'),
+      icon: yoshinoIcon,
+      theme: 'rgba(28, 246, 144, 0.7)'
+    },
+    {
+      description: get(content, 'eve.description'),
+      name: get(content, 'eve.name'),
+      icon: eveIcon,
+      theme: 'rgba(241, 130, 227, 0.7)'
+    },
+    {
+      description: get(content, 'koumi.description'),
+      name: get(content, 'koumi.name'),
+      icon: koumiIcon,
+      theme: 'rgba(255, 165, 0, 0.7)'
+    },
+    {
+      description: get(content, 'slgame.description'),
+      name: get(content, 'slgame.name'),
+      icon: slgameIcon,
+      theme: 'rgba(130, 227, 241, 0.7)'
+    }
+  ]
 
   return (
     <Page
@@ -86,55 +116,39 @@ const AboutPage = () => {
         direction="column"
         spacing={3}
       >
-        <Grid
-          className={classes.forward}
-          item
-        >
-          <MemberPanel
-            description={content.yoshinobhl.description}
-            icon={yoshinoIcon}
-            name={content.yoshinobhl.name}
-            themeColor="rgba(28, 246, 144, 0.7)"
-          />
-        </Grid>
-        <Grid
-          className={classes.reverse}
-          item
-        >
-          <MemberPanel
-            description={content.eve.description}
-            icon={eveIcon}
-            name={content.eve.name}
-            themeColor="rgba(241, 130, 227, 0.7)"
-            reverse
-          />
-        </Grid>
-        <Grid
-          className={classes.forward}
-          item
-        >
-          <MemberPanel
-            description={content.koumi.description}
-            icon={koumiIcon}
-            name={content.koumi.name}
-            themeColor="rgba(255, 165, 0, 0.7)"
-          />
-        </Grid>
-        <Grid
-          className={classes.reverse}
-          item
-        >
-          <MemberPanel
-            description={content.slgame.description}
-            icon={slgameIcon}
-            name={content.slgame.name}
-            themeColor="rgba(130, 227, 241, 0.7)"
-            reverse
-          />
-        </Grid>
+        {
+          map(members, (m, i) => {
+            const reverse = i % 2 !== 0
+
+            return (
+              <Slide
+                direction={reverse ? 'left' : 'right'}
+                in
+                key={i}
+                mountOnEnter
+                timeout={(i + 1) * 900}
+              >
+                <Grid
+                  className={reverse ? classes.reverse : classes.forward}
+                  item
+                >
+
+                  <MemberPanel
+                    description={m.description}
+                    icon={m.icon}
+                    name={m.name}
+                    reverse={reverse}
+                    themeColor={m.theme}
+                  />
+
+                </Grid>
+              </Slide>
+            )
+          })
+        }
       </Grid>
     </Page>
   )
 }
 
-export default AboutPage;
+export default MembersPage;

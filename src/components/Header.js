@@ -2,9 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 import Toolbar from '@material-ui/core/Toolbar'
-import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+//import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Grid from '@material-ui/core/Grid'
-import Slide from '@material-ui/core/Slide';
 import AppBar from '@material-ui/core/AppBar'
 
 import LanguageDropdown from './LanguageDropdown'

@@ -3,7 +3,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom'
 
 import HomePage from '../pages/HomePage'
-import AboutPage from '../pages/AboutPage'
+import MembersPage from '../pages/MembersPage'
 import MapsPage from '../pages/MapsPage'
 
 const Content = () => {
@@ -12,7 +12,7 @@ const Content = () => {
     < Switch >
       <Route exact path="/" component={() => <HomePage />} />
       <Route path="/home" component={() => <HomePage />} />
-      <Route path="/members" component={() => <AboutPage />} />
+      <Route path="/members" component={() => <MembersPage />} />
       <Route path="/maps" component={() => <MapsPage />} />
     </Switch >
 
