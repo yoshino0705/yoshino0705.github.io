@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'rgba(223, 169, 169, 0.50)',
 
     display: 'flex',
-
     padding: theme.spacing(3),
 
     borderRadius: 12,

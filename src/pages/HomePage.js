@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'rgba(223, 169, 169, 0.50)',
     position: 'relative',
     backgroundPosition: 'center',
-    backgroundSize: 'cover',
     backgroundImage: `url(${friedshrimp})`,
 
     display: 'flex',

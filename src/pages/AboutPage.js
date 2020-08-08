@@ -19,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'rgba(223, 169, 169, 0.50)',
     position: 'relative',
     backgroundPosition: 'center',
-    backgroundSize: 'cover',
     backgroundImage: `url(${friedshrimp})`,
 
     display: 'flex',
@@ -35,7 +34,9 @@ const useStyles = makeStyles((theme) => ({
   container: {
     padding: theme.spacing(3),
     maxWidth: 1000,
-    margin: '0 auto'
+    [theme.breakpoints.up('md')]: {
+      margin: '0 auto'
+    },
   },
   family: {
     fontWeight: 800,
@@ -79,9 +80,6 @@ const AboutPage = () => {
       elevation={24}
       title="members"
     >
-      <Grid container>
-
-      </Grid>
       <Grid
         className={classes.container}
         container
