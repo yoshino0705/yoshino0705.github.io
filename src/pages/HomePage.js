@@ -24,12 +24,12 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     [theme.breakpoints.up('md')]: {
-      height: '150vh'
+      minHeight: '150vh'
     },
     [theme.breakpoints.down('sm')]: {
-      height: '100vh'
+      minHeight: '100vh'
     },
-
+    padding: theme.spacing(3)
   },
   container: {
     padding: theme.spacing(3)
@@ -43,7 +43,6 @@ const useStyles = makeStyles((theme) => ({
     },
     backgroundColor: 'rgba(223, 169, 169, 0.70)',
     borderRadius: 12,
-
   },
   card2: {
     [theme.breakpoints.up('md')]: {
@@ -54,7 +53,6 @@ const useStyles = makeStyles((theme) => ({
     },
     backgroundColor: 'rgba(38, 242, 242, 0.70)',
     borderRadius: 12,
-    width: 600
   },
   family: {
     fontWeight: 800,

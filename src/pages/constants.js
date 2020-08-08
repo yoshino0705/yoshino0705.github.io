@@ -3,7 +3,8 @@ export const LANGUAGES = {
   'en-US': 'English'
 }
 
-const ZH_TW = {
+// Home Page Content
+const HOME_ZH_TW = {
   koumi: '酷米家族',
   welcome: '歡迎來到',
   website: '的網站',
@@ -12,7 +13,7 @@ const ZH_TW = {
   werewolf_note: '其實就是狼人殺，可是當時我們比較習慣叫他人狼'
 }
 
-const EN_US = {
+const HOME_EN_US = {
   koumi: 'The Koumi Family\'s',
   welcome: 'Welcome to',
   website: 'Website',
@@ -22,6 +23,21 @@ const EN_US = {
 }
 
 export const HOME_PAGE_CONTENT = {
-  'zh-TW': ZH_TW,
-  'en-US': EN_US
+  'zh-TW': HOME_ZH_TW,
+  'en-US': HOME_EN_US
+}
+
+// About Page Content
+
+const ABOUT_ZH_TW = {
+
+}
+
+const ABOUT_EN_US = {
+
+}
+
+export const ABOUT_PAGE_CONTENT = {
+  'zh-TW': ABOUT_ZH_TW,
+  'en-US': ABOUT_EN_US
 }
