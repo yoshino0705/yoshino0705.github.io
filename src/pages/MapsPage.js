@@ -79,9 +79,9 @@ const MapsPage = () => {
               className={classes.galleryContainer}
               item
             >
-              <Gallery
+              {/* <Gallery
                 images={images}
-              />
+              /> */}
             </Grid>
           </Grid>
         </CardContent>
