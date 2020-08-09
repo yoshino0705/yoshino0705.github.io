@@ -149,28 +149,28 @@ const MembersPage = () => {
             const reverse = i % 2 !== 0
 
             return (
-              <Slide
-                direction={reverse ? 'left' : 'right'}
-                in
-                key={i}
-                mountOnEnter
-                timeout={(i + 1) * 500}
+              // <Slide
+              //   direction={reverse ? 'left' : 'right'}
+              //   in
+              //   key={i}
+              //   mountOnEnter
+              //   timeout={(i + 1) * 500}
+              // >
+              <Grid
+                className={reverse ? classes.reverse : classes.forward}
+                item
               >
-                <Grid
-                  className={reverse ? classes.reverse : classes.forward}
-                  item
-                >
 
-                  <MemberPanel
-                    description={m.description}
-                    icon={m.icon}
-                    name={m.name}
-                    reverse={reverse}
-                    themeColor={m.theme}
-                  />
+                <MemberPanel
+                  description={m.description}
+                  icon={m.icon}
+                  name={m.name}
+                  reverse={reverse}
+                  themeColor={m.theme}
+                />
 
-                </Grid>
-              </Slide>
+              </Grid>
+              // </Slide>
             )
           })
         }

@@ -8,7 +8,7 @@ const HOME_ZH_TW = {
   koumi: '酷米家族',
   welcome: '歡迎來到',
   website: '的網站',
-  introduction: '我們原先是一個聊天群(現在也是)，某一天有人突然說想要做做看Minecraft地圖，群裡又剛好有人會指令和蓋地圖，因而誕生了我們團隊的最初作品：',
+  introduction: '我們一開始只是是一個聊天群，不過從2018年釋出第一部Minecraft的多人地圖後，受到相當多的玩家支持，就漸漸成為了Minecraft的地圖製作團隊。',
   werewolf: '人狼殺',
   werewolf_note: '其實就是狼人殺，可是當時我們比較習慣叫他人狼'
 }
@@ -17,7 +17,7 @@ const HOME_EN_US = {
   koumi: 'The Koumi Family\'s',
   welcome: 'Welcome to',
   website: 'Website',
-  introduction: 'We met each other in an online chat group, one day out of nowhere someone proposed the idea of making a Minecraft multiplayer map, which turned out we happened to have members who were familiar with building and commands, and this is how our first ever creation was born:',
+  introduction: 'We started as an online chat group on the LINE app, after we released our first map creation in 2018 and gained a lot of popularity, we gradually became a Minecraft map making team.',
   werewolf: 'The Werewolf Game',
   werewolf_note: 'Similar to Town of Salem, but with different roles, abilities, and playstyle deviations'
 }

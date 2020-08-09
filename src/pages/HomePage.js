@@ -50,12 +50,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       width: 300
     },
-    backgroundColor: 'rgba(38, 242, 242, 0.70)',
+    backgroundColor: 'rgba(255, 151, 15, 0.91)',
     borderRadius: 12,
   },
   family: {
     fontWeight: 800,
-    color: '#FF6200',
+    color: '#FF1F0F',
     fontSize: 72,
     [theme.breakpoints.down('sm')]: {
       fontSize: 54
@@ -121,11 +121,19 @@ const HomePage = () => {
                 {content.website}
               </Typography>
             </Grid>
+            <Grid item>
+              <Typography
+                className={classes.intro}
+                variant="h4"
+              >
+                {content.introduction}
+              </Typography>
+            </Grid>
           </Grid>
         </CardContent>
       </Card>
 
-      <Card
+      {/* <Card
         className={classes.card2}
       >
         <CardContent>
@@ -135,14 +143,7 @@ const HomePage = () => {
             direction="column"
             spacing={2}
           >
-            <Grid item>
-              <Typography
-                className={classes.intro}
-                variant="h4"
-              >
-                {content.introduction}
-              </Typography>
-            </Grid>
+            
             <Grid item>
               <Typography
                 className={classes.werewolf}
@@ -161,7 +162,7 @@ const HomePage = () => {
             </Grid>
           </Grid>
         </CardContent>
-      </Card>
+      </Card> */}
     </Page>
   )
 }
