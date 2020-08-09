@@ -5,9 +5,21 @@ import friedshrimp from '../components/assets/friedshrimp.png'
 import { useLocation } from 'react-router-dom'
 import FileSaver from 'file-saver';
 
-import { Carousel } from 'react-responsive-carousel'
-import image from '../components/assets/friedshrimp.png'
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Grid from '@material-ui/core/Grid'
+import Card from '@material-ui/core/Card'
+import CardContent from '@material-ui/core/CardContent'
+
+import MapNav from '../components/MapNav'
+import Gallery from '../components/Gallery'
+
+import town0 from '../components/assets/maps/werewolf_dlx/town/town0.png'
+import town1 from '../components/assets/maps/werewolf_dlx/town/town1.png'
+import town2 from '../components/assets/maps/werewolf_dlx/town/town2.png'
+import town3 from '../components/assets/maps/werewolf_dlx/town/town3.jpg'
+import town4 from '../components/assets/maps/werewolf_dlx/town/town4.jpg'
+import town5 from '../components/assets/maps/werewolf_dlx/town/town5.png'
+import town6 from '../components/assets/maps/werewolf_dlx/town/town6.png'
+import town7 from '../components/assets/maps/werewolf_dlx/town/town7.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,8 +29,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: `url(${friedshrimp})`,
     height: '150vh'
   },
-  slider: {
-    height: 100
+  galleryContainer: {
+    display: 'flex',
+    justifyContent: 'center'
+  },
+  card: {
+    backgroundColor: 'transparent',
+    boxShadow: 'none'
   }
 }));
 
@@ -32,33 +49,43 @@ const MapsPage = () => {
       "Werewolf_Datapack.zip");
   }
 
+  const images = [
+    { src: town0 },
+    { src: town1 },
+    { src: town2 },
+    { src: town3 },
+    { src: town4 },
+    { src: town5 },
+    { src: town6 },
+    { src: town7 }
+  ]
+
   return (
     <Page
       className={classes.root}
       title="maps"
     >
-      <div
-        style={{ width: '50%', margin: '0 auto' }}
-      >
-        <Carousel
-          autoPlay
-          showStatus={false}
-          showThumbs={false}
-          useKeyboardArrows
-          stopOnHover
-          swipeable
-          emulateTouch={false}
-        >
-          <div >
-            <img alt="" src={image} loading="lazy" />
-            <p className="legend">Legend 1</p>
-          </div>
-          <div >
-            <img alt="" src={image} loading="lazy" />
-            <p className="legend">Legend 2</p>
-          </div>
-        </Carousel>
-      </div>
+      <Card className={classes.card}>
+        <CardContent>
+          <Grid
+            container
+            direction="column"
+            spacing={3}
+          >
+            <Grid item>
+              <MapNav />
+            </Grid>
+            <Grid
+              className={classes.galleryContainer}
+              item
+            >
+              <Gallery
+                images={images}
+              />
+            </Grid>
+          </Grid>
+        </CardContent>
+      </Card>
 
     </Page>
   )
