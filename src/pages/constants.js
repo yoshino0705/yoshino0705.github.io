@@ -17,7 +17,7 @@ const HOME_EN_US = {
   koumi: 'The Koumi Family\'s',
   welcome: 'Welcome to',
   website: 'Website',
-  introduction: 'We started as an online chat group on the LINE app, after we released our first map creation in 2018 and gained a lot of popularity, we gradually became a Minecraft map making team.',
+  introduction: 'We started off as people chatting in the same channel on an app, after we released our first map creation in 2018 and it gained a lot of popularity, we gradually became a Minecraft map making team.',
   werewolf: 'The Werewolf Game',
   werewolf_note: 'Similar to Town of Salem, but with different roles, abilities, and playstyle deviations'
 }
@@ -102,4 +102,21 @@ const ABOUT_EN_US = {
 export const ABOUT_PAGE_CONTENT = {
   'zh-TW': ABOUT_ZH_TW,
   'en-US': ABOUT_EN_US
+}
+
+const MAP_ZH_TW = {
+  werewolf_og: '人狼殺',
+  friedshrimp: '為了炸蝦，我說不定連稽查員都能幹掉',
+  werewolf_dlx: '狼人殺 旗艦版'
+}
+
+const MAP_EN_US = {
+  werewolf_og: 'The Werewolf Game',
+  friedshrimp: 'If it\'s for Friedshrimp, I\'d even defeat the Inspectors',
+  werewolf_dlx: 'The Werewolf Game Deluxe'
+}
+
+export const MAP_NAMES = {
+  'zh-TW': MAP_ZH_TW,
+  'en-US': MAP_EN_US
 }
