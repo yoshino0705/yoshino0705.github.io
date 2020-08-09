@@ -9,7 +9,6 @@ import Translate from '@material-ui/icons/Translate'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 import Typography from '@material-ui/core/Typography'
-import Hidden from '@material-ui/core/Hidden'
 
 import { LANGUAGES } from './constants'
 import keys from 'lodash/keys'

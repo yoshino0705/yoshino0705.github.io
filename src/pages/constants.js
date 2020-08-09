@@ -60,7 +60,7 @@ const ABOUT_ZH_TW = {
   },
   yoru: {
     name: '夜',
-    description: '頭像永遠是空的'
+    description: '過著美國時間的貓頭鷹'
   }
 }
 
@@ -91,11 +91,11 @@ const ABOUT_EN_US = {
   },
   alex: {
     name: 'Kinoko Neko (Alex)',
-    description: 'The one guy that always goes off topic in a bizzare direction.'
+    description: 'The f**\'d up one.'
   },
   yoru: {
     name: 'Yoru',
-    description: 'Always uses the default profile icon.'
+    description: 'Always stays up late like an owl (which ties with the nick name very well because the word Yoru means night time in Japanese)'
   }
 }
 

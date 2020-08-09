@@ -13,7 +13,8 @@ const Content = () => {
       <Route exact path="/" component={() => <HomePage />} />
       <Route path="/home" component={() => <HomePage />} />
       <Route path="/members" component={() => <MembersPage />} />
-      <Route path="/maps" component={() => <MapsPage />} />
+      <Route exact path="/maps" component={() => <MapsPage />} />
+      <Route path="/maps/werewolf-dlx" component={() => <HomePage />} />
     </Switch >
 
   )
