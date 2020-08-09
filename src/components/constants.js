@@ -19,3 +19,21 @@ export const TITLES = {
   'zh-TW': TITLE_ZH_TW,
   'en-US': TITLE_EN_US
 }
+
+
+const MAP_ZH_TW = {
+  werewolf_og: '人狼殺',
+  friedshrimp: '為了炸蝦，我說不定連稽查員都能幹掉',
+  werewolf_dlx: '狼人殺 旗艦版'
+}
+
+const MAP_EN_US = {
+  werewolf_og: 'The Werewolf Game',
+  friedshrimp: 'If it\'s for Friedshrimp, I\'d even defeat the Inspectors',
+  werewolf_dlx: 'The Werewolf Game Deluxe'
+}
+
+export const MAP_NAMES = {
+  'zh-TW': MAP_ZH_TW,
+  'en-US': MAP_EN_US
+}
