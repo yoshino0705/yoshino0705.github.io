@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 
@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography'
 import Slide from '@material-ui/core/Slide'
 import Card from '@material-ui/core/Card'
 import CardMedia from '@material-ui/core/CardMedia'
+import Fade from '@material-ui/core/Fade'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,9 +18,11 @@ const useStyles = makeStyles((theme) => ({
       height: 350,
     },
     [theme.breakpoints.down('sm')]: {
-      width: 200,
-      height: 200,
+      width: 250,
+      height: 250,
     },
+    display: 'flex',
+    justifyContent: 'center'
   },
   overlay: {
     position: 'absolute',
@@ -43,6 +46,23 @@ const useStyles = makeStyles((theme) => ({
     color: '#F9A024',
     fontWeight: 900,
     margin: theme.spacing(0, 2),
+    textAlign: 'center',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 28
+    },
+  },
+  legend: {
+    position: 'absolute',
+    width: '90%',
+    bottom: 20,
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    color: '#fff',
+    backgroundColor: '#000',
+    borderRadius: 12
+  },
+  legendText: {
+    fontSize: 16,
     textAlign: 'center'
   }
 
@@ -80,8 +100,23 @@ const MapNavItem = (props) => {
         <CardMedia
           className={classes.image}
           image={image}
+          loading="lazy"
           title={title}
         />
+
+        <Fade in={!slideIn}>
+          <div
+            className={classes.legend}
+          >
+            <Typography
+              className={classes.legendText}
+              variant="h4"
+            >
+              {title}
+            </Typography>
+          </div>
+        </Fade>
+
         <Slide
           direction="up"
           in={slideIn}

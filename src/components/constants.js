@@ -29,7 +29,7 @@ const MAP_ZH_TW = {
 
 const MAP_EN_US = {
   werewolf_og: 'The Werewolf Game',
-  friedshrimp: 'If it\'s for Friedshrimp, I\'d even defeat the Inspectors',
+  friedshrimp: 'If it\'s for fried shrimp, I\'d even defeat the Inspectors',
   werewolf_dlx: 'The Werewolf Game Deluxe'
 }
 
