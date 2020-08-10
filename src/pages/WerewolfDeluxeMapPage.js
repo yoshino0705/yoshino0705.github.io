@@ -26,6 +26,13 @@ import snow14 from '../components/assets/maps/werewolf_dlx/snow/snow14.png'
 import snow15 from '../components/assets/maps/werewolf_dlx/snow/snow15.jpg'
 import snow16 from '../components/assets/maps/werewolf_dlx/snow/snow16.png'
 
+import art0 from '../components/assets/maps/werewolf_dlx/art/art0.png'
+import art1 from '../components/assets/maps/werewolf_dlx/art/art1.png'
+import art2 from '../components/assets/maps/werewolf_dlx/art/art2.jpg'
+import art3 from '../components/assets/maps/werewolf_dlx/art/art3.png'
+import art4 from '../components/assets/maps/werewolf_dlx/art/art4.png'
+import art5 from '../components/assets/maps/werewolf_dlx/art/art5.png'
+
 import town0 from '../components/assets/maps/werewolf_dlx/town/town0.png'
 import town1 from '../components/assets/maps/werewolf_dlx/town/town1.png'
 import town2 from '../components/assets/maps/werewolf_dlx/town/town2.png'
@@ -62,6 +69,7 @@ const WerewolfDeluxeMapPage = () => {
     snow0, snow1, snow2, snow3, snow4, snow5, snow6, snow7,
     snow8, snow9, snow10, snow11, snow12, snow13, snow14, snow15, snow16
   ]
+  const artImages = [art0, art1, art2, art3, art4, art5]
   const townImages = [town0, town1, town2, town3, town4, town5, town6, town7]
   const [images, setImages] = useState(snowImages)
 
@@ -86,7 +94,7 @@ const WerewolfDeluxeMapPage = () => {
         setImages(snowImages)
         break
       case 'art':
-        setImages(townImages)
+        setImages(artImages)
         break
       case 'crystal':
         setImages(townImages)

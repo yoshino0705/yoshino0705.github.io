@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import PropTypes from 'prop-types'
 
@@ -28,8 +28,13 @@ const Gallery = (props) => {
   } = props
 
   const classes = useStyles()
+  const [selectedIndex, setSelectedIndex] = useState(0)
 
-  // if (isEmpty(images)) return <div />
+  useEffect(() => {
+    setSelectedIndex(0)
+  }, [images])
+
+  if (isEmpty(images)) return <div />
 
   return (
     <Grid
@@ -42,9 +47,12 @@ const Gallery = (props) => {
         showStatus={false}
         showThumbs={false}
         useKeyboardArrows
-        stopOnHover
         swipeable
         emulateTouch
+        stopOnHover
+        interval={2000}
+        selectedItem={selectedIndex}
+        onChange={(e) => setSelectedIndex(e)}
       >
         {
           map(images, (im, i) => {
