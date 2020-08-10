@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import FileSaver from 'file-saver';
+import { useSelector } from 'react-redux'
 
+import { SCENE_NAMES } from './constants'
 import Grid from '@material-ui/core/Grid'
 
 import Gallery from '../components/Gallery'
@@ -72,6 +74,7 @@ import sea5 from '../components/assets/maps/werewolf_dlx/sea/sea5.png'
 import sea6 from '../components/assets/maps/werewolf_dlx/sea/sea6.png'
 import sea7 from '../components/assets/maps/werewolf_dlx/sea/sea7.png'
 
+import get from 'lodash/get'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -115,13 +118,16 @@ const WerewolfDeluxeMapPage = () => {
       "Werewolf_Datapack.zip");
   }
 
+  const language = useSelector(state => state.language)
+  const content = get(SCENE_NAMES[language.locale], 'werewolf_dlx')
+
   const mapOptions = [
-    { label: '雪町', value: 'snow' },
-    { label: '美術館', value: 'art' },
-    { label: '水晶風暴', value: 'crystal' },
-    { label: '河堤社區', value: 'comm' },
-    { label: '經典城鎮', value: 'town' },
-    { label: '海底都市', value: 'sea' }
+    { label: get(content, 'snow'), value: 'snow' },
+    { label: get(content, 'art'), value: 'art' },
+    { label: get(content, 'crystal'), value: 'crystal' },
+    { label: get(content, 'comm'), value: 'comm' },
+    { label: get(content, 'town'), value: 'town' },
+    { label: get(content, 'sea'), value: 'sea' }
   ]
 
   const getSelectedMap = (val) => {
@@ -166,7 +172,7 @@ const WerewolfDeluxeMapPage = () => {
         <Grid item>
           <Dropdown
             getSelectedOption={getSelectedMap}
-            label="預覽地圖"
+            label={get(content, 'preview')}
             options={mapOptions}
           />
         </Grid>

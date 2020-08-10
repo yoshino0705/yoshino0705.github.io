@@ -103,3 +103,32 @@ export const ABOUT_PAGE_CONTENT = {
   'zh-TW': ABOUT_ZH_TW,
   'en-US': ABOUT_EN_US
 }
+
+const SCENE_ZH_TW = {
+  werewolf_dlx: {
+    preview: '預覽地圖',
+    snow: '雪町',
+    art: '美術館',
+    crystal: '水晶風暴',
+    comm: '河堤社區',
+    town: '經典城鎮',
+    sea: '海底都市',
+  }
+}
+
+const SCENE_EN_US = {
+  werewolf_dlx: {
+    preview: 'Preview Landscapes',
+    snow: 'Snowdin',
+    art: 'Art Museum',
+    crystal: 'Crystalic Storm',
+    comm: 'River Bank Community',
+    town: 'Classic Town',
+    sea: 'Underwater City',
+  }
+}
+
+export const SCENE_NAMES = {
+  'zh-TW': SCENE_ZH_TW,
+  'en-US': SCENE_EN_US
+}
