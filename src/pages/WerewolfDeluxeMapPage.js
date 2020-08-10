@@ -33,6 +33,27 @@ import art3 from '../components/assets/maps/werewolf_dlx/art/art3.png'
 import art4 from '../components/assets/maps/werewolf_dlx/art/art4.png'
 import art5 from '../components/assets/maps/werewolf_dlx/art/art5.png'
 
+import crystal0 from '../components/assets/maps/werewolf_dlx/crystal/crystal0.jpg'
+import crystal1 from '../components/assets/maps/werewolf_dlx/crystal/crystal1.png'
+import crystal2 from '../components/assets/maps/werewolf_dlx/crystal/crystal2.png'
+import crystal3 from '../components/assets/maps/werewolf_dlx/crystal/crystal3.png'
+import crystal4 from '../components/assets/maps/werewolf_dlx/crystal/crystal4.png'
+
+import comm0 from '../components/assets/maps/werewolf_dlx/comm/comm0.png'
+import comm1 from '../components/assets/maps/werewolf_dlx/comm/comm1.png'
+import comm2 from '../components/assets/maps/werewolf_dlx/comm/comm2.png'
+import comm3 from '../components/assets/maps/werewolf_dlx/comm/comm3.png'
+import comm4 from '../components/assets/maps/werewolf_dlx/comm/comm4.png'
+import comm5 from '../components/assets/maps/werewolf_dlx/comm/comm5.png'
+import comm6 from '../components/assets/maps/werewolf_dlx/comm/comm6.png'
+import comm7 from '../components/assets/maps/werewolf_dlx/comm/comm7.png'
+import comm8 from '../components/assets/maps/werewolf_dlx/comm/comm8.png'
+import comm9 from '../components/assets/maps/werewolf_dlx/comm/comm9.png'
+import comm10 from '../components/assets/maps/werewolf_dlx/comm/comm10.png'
+import comm11 from '../components/assets/maps/werewolf_dlx/comm/comm11.png'
+import comm12 from '../components/assets/maps/werewolf_dlx/comm/comm12.png'
+import comm13 from '../components/assets/maps/werewolf_dlx/comm/comm13.png'
+
 import town0 from '../components/assets/maps/werewolf_dlx/town/town0.png'
 import town1 from '../components/assets/maps/werewolf_dlx/town/town1.png'
 import town2 from '../components/assets/maps/werewolf_dlx/town/town2.png'
@@ -41,6 +62,15 @@ import town4 from '../components/assets/maps/werewolf_dlx/town/town4.jpg'
 import town5 from '../components/assets/maps/werewolf_dlx/town/town5.png'
 import town6 from '../components/assets/maps/werewolf_dlx/town/town6.png'
 import town7 from '../components/assets/maps/werewolf_dlx/town/town7.png'
+
+import sea0 from '../components/assets/maps/werewolf_dlx/sea/sea0.png'
+import sea1 from '../components/assets/maps/werewolf_dlx/sea/sea1.png'
+import sea2 from '../components/assets/maps/werewolf_dlx/sea/sea2.png'
+import sea3 from '../components/assets/maps/werewolf_dlx/sea/sea3.png'
+import sea4 from '../components/assets/maps/werewolf_dlx/sea/sea4.jpg'
+import sea5 from '../components/assets/maps/werewolf_dlx/sea/sea5.png'
+import sea6 from '../components/assets/maps/werewolf_dlx/sea/sea6.png'
+import sea7 from '../components/assets/maps/werewolf_dlx/sea/sea7.png'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -70,7 +100,13 @@ const WerewolfDeluxeMapPage = () => {
     snow8, snow9, snow10, snow11, snow12, snow13, snow14, snow15, snow16
   ]
   const artImages = [art0, art1, art2, art3, art4, art5]
+  const crystalImages = [crystal0, crystal1, crystal2, crystal3, crystal4]
+  const commImages = [
+    comm0, comm1, comm2, comm3, comm4, comm5, comm6, comm7,
+    comm8, comm9, comm10, comm11, comm12, comm13
+  ]
   const townImages = [town0, town1, town2, town3, town4, town5, town6, town7]
+  const seaImages = [sea0, sea1, sea2, sea3, sea4, sea5, sea6, sea7]
   const [images, setImages] = useState(snowImages)
 
   const onDownload = () => {
@@ -97,19 +133,19 @@ const WerewolfDeluxeMapPage = () => {
         setImages(artImages)
         break
       case 'crystal':
-        setImages(townImages)
+        setImages(crystalImages)
         break
       case 'comm':
-        setImages(townImages)
+        setImages(commImages)
         break
       case 'town':
         setImages(townImages)
         break
       case 'sea':
-        setImages(townImages)
+        setImages(seaImages)
         break
       default:
-        setImages(townImages)
+        setImages(snowImages)
     }
   }
 
