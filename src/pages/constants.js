@@ -67,7 +67,7 @@ const ABOUT_ZH_TW = {
 const ABOUT_EN_US = {
   yoshinobhl: {
     name: 'YoshinoBHL',
-    description: 'Minecraft command expert, map creation planning, the developer of this website, and the translator.'
+    description: 'Minecraft command expert, map creation planning, the owner of this website, and the translator.'
   },
   eve: {
     name: 'Eve',
