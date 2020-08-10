@@ -29,7 +29,7 @@ const Gallery = (props) => {
 
   const classes = useStyles()
 
-  if (isEmpty(images)) return <div />
+  // if (isEmpty(images)) return <div />
 
   return (
     <Grid
@@ -50,7 +50,7 @@ const Gallery = (props) => {
           map(images, (im, i) => {
             return (
               <div key={i}>
-                <img alt="" src={im.src} loading="lazy" />
+                <img alt="" src={im} loading="lazy" />
                 {/* <p className="legend">{im.legend}</p> */}
               </div>
             )

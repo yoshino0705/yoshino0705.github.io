@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import FileSaver from 'file-saver';
 
@@ -7,6 +7,24 @@ import Grid from '@material-ui/core/Grid'
 import Gallery from '../components/Gallery'
 import Page from '../components/Page'
 import Dropdown from '../components/Dropdown'
+
+import snow0 from '../components/assets/maps/werewolf_dlx/snow/snow0.png'
+import snow1 from '../components/assets/maps/werewolf_dlx/snow/snow1.png'
+import snow2 from '../components/assets/maps/werewolf_dlx/snow/snow2.png'
+import snow3 from '../components/assets/maps/werewolf_dlx/snow/snow3.png'
+import snow4 from '../components/assets/maps/werewolf_dlx/snow/snow4.png'
+import snow5 from '../components/assets/maps/werewolf_dlx/snow/snow5.png'
+import snow6 from '../components/assets/maps/werewolf_dlx/snow/snow6.png'
+import snow7 from '../components/assets/maps/werewolf_dlx/snow/snow7.png'
+import snow8 from '../components/assets/maps/werewolf_dlx/snow/snow8.png'
+import snow9 from '../components/assets/maps/werewolf_dlx/snow/snow9.png'
+import snow10 from '../components/assets/maps/werewolf_dlx/snow/snow10.png'
+import snow11 from '../components/assets/maps/werewolf_dlx/snow/snow11.png'
+import snow12 from '../components/assets/maps/werewolf_dlx/snow/snow12.png'
+import snow13 from '../components/assets/maps/werewolf_dlx/snow/snow13.png'
+import snow14 from '../components/assets/maps/werewolf_dlx/snow/snow14.png'
+import snow15 from '../components/assets/maps/werewolf_dlx/snow/snow15.jpg'
+import snow16 from '../components/assets/maps/werewolf_dlx/snow/snow16.png'
 
 import town0 from '../components/assets/maps/werewolf_dlx/town/town0.png'
 import town1 from '../components/assets/maps/werewolf_dlx/town/town1.png'
@@ -29,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   galleryContainer: {
     display: 'flex',
     justifyContent: 'center',
-    width: '70%',
+    width: '90%',
     marginTop: theme.spacing(3)
   },
 
@@ -39,6 +57,14 @@ const useStyles = makeStyles((theme) => ({
 const WerewolfDeluxeMapPage = () => {
 
   const classes = useStyles()
+
+  const snowImages = [
+    snow0, snow1, snow2, snow3, snow4, snow5, snow6, snow7,
+    snow8, snow9, snow10, snow11, snow12, snow13, snow14, snow15, snow16
+  ]
+  const townImages = [town0, town1, town2, town3, town4, town5, town6, town7]
+  const [images, setImages] = useState(snowImages)
+
   const onDownload = () => {
     FileSaver.saveAs(
       process.env.PUBLIC_URL + "/downloads/datapack.zip",
@@ -54,19 +80,29 @@ const WerewolfDeluxeMapPage = () => {
     { label: '海底都市', value: 'sea' }
   ]
 
-  const images = [
-    { src: town0 },
-    { src: town1 },
-    { src: town2 },
-    { src: town3 },
-    { src: town4 },
-    { src: town5 },
-    { src: town6 },
-    { src: town7 }
-  ]
-
   const getSelectedMap = (val) => {
-    console.log(`selected ${val}`)
+    switch (val) {
+      case 'snow':
+        setImages(snowImages)
+        break
+      case 'art':
+        setImages(townImages)
+        break
+      case 'crystal':
+        setImages(townImages)
+        break
+      case 'comm':
+        setImages(townImages)
+        break
+      case 'town':
+        setImages(townImages)
+        break
+      case 'sea':
+        setImages(townImages)
+        break
+      default:
+        setImages(townImages)
+    }
   }
 
   return (

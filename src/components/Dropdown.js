@@ -16,13 +16,15 @@ const useStyles = makeStyles((theme) => ({
       width: '25ch',
     },
     '& .MuiFormLabel-root': {
-      color: 'white',
+      color: 'black',
       fontWeight: 500
     },
     '& .MuiFilledInput-root': {
       background: 'orange',
-      color: 'white',
-      borderRadius: 12
+      color: 'black',
+      borderRadius: 12,
+      border: 'solid crimson',
+      fontWeight: 900
     },
     '& .MuiFilledInput-underline:before': {
       border: 'none'
