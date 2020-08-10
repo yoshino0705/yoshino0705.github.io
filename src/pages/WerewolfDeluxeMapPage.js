@@ -158,7 +158,7 @@ const WerewolfDeluxeMapPage = () => {
   return (
     <Page
       className={classes.root}
-      title="maps"
+      title="werewolf-dlx"
     >
       <div className={classes.galleryContainer}>
         <Gallery

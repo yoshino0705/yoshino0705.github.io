@@ -104,6 +104,8 @@ export const ABOUT_PAGE_CONTENT = {
   'en-US': ABOUT_EN_US
 }
 
+// Scene/Landscape names
+
 const SCENE_ZH_TW = {
   werewolf_dlx: {
     preview: '地圖預覽',
