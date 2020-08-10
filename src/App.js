@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-import Header from './components/Header'
-import Content from './components/Content'
+import AppComponent from './components/AppComponent'
 
 import { HashRouter as Router } from 'react-router-dom'
 
@@ -22,8 +21,7 @@ class App extends Component {
         basename="/"
       >
         {PROD && <GA.RouteTracker />}
-        <Header />
-        <Content />
+        <AppComponent />
       </Router>
     )
   }

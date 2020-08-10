@@ -2,7 +2,6 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { makeStyles } from '@material-ui/core/styles'
 import Page from '../components/Page'
-import friedshrimp from '../components/assets/friedshrimp.png'
 
 import Grid from '@material-ui/core/Grid'
 import Card from '@material-ui/core/Card'
@@ -13,21 +12,12 @@ import { HOME_PAGE_CONTENT } from './constants'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: 'rgba(223, 169, 169, 0.50)',
     position: 'relative',
-    backgroundPosition: 'center',
-    backgroundImage: `url(${friedshrimp})`,
 
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    [theme.breakpoints.up('md')]: {
-      minHeight: '100vh'
-    },
-    [theme.breakpoints.down('sm')]: {
-      minHeight: '100vh'
-    },
     padding: theme.spacing(3)
   },
   container: {

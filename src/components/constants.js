@@ -6,7 +6,7 @@ export const LANGUAGES = {
 const TITLE_ZH_TW = {
   'home': '酷米家族',
   'members': '家族成員',
-  'maps': '作品介紹'
+  'maps': '作品一覽'
 }
 
 const TITLE_EN_US = {

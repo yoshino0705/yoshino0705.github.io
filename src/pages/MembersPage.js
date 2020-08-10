@@ -2,10 +2,8 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { makeStyles } from '@material-ui/core/styles'
 import Page from '../components/Page'
-import friedshrimp from '../components/assets/friedshrimp.png'
 
 import Grid from '@material-ui/core/Grid'
-import Slide from '@material-ui/core/Slide'
 
 import { ABOUT_PAGE_CONTENT } from './constants'
 import get from 'lodash/get'
@@ -23,19 +21,10 @@ import yoruIcon from '../components/assets/member_icons/yoru.jpg'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: 'rgba(223, 169, 169, 0.50)',
     position: 'relative',
-    backgroundPosition: 'center',
-    backgroundImage: `url(${friedshrimp})`,
 
     display: 'flex',
     flexDirection: 'column',
-    [theme.breakpoints.up('md')]: {
-      minHeight: '100vh'
-    },
-    [theme.breakpoints.down('sm')]: {
-      minHeight: '100vh'
-    },
     padding: theme.spacing(3),
   },
   container: {
@@ -159,6 +148,7 @@ const MembersPage = () => {
               <Grid
                 className={reverse ? classes.reverse : classes.forward}
                 item
+                key={i}
               >
 
                 <MemberPanel

@@ -1,12 +1,22 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
+import { useSelector } from 'react-redux'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
+import classNames from 'classnames'
 
 import Paper from '@material-ui/core/Paper'
 import { TITLES } from './constants'
 
 import get from 'lodash/get'
+
+import { makeStyles } from '@material-ui/core/styles'
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    background: 'transparent',
+    boxShadow: 'none'
+  },
+}));
 
 const Page = (props) => {
   const {
@@ -17,12 +27,13 @@ const Page = (props) => {
     ...rest
   } = props
 
+  const classes = useStyles()
   const language = useSelector(state => state.language)
   const titleLabel = get(TITLES[language.locale], title)
 
   return (
     <Paper
-      className={className}
+      className={classNames(classes.root, className)}
       elevation={elevation}
       square
       {...rest}

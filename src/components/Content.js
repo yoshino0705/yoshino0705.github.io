@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom'
 import HomePage from '../pages/HomePage'
 import MembersPage from '../pages/MembersPage'
 import MapsPage from '../pages/MapsPage'
+import WerewolfDeluxeMapPage from '../pages/WerewolfDeluxeMapPage'
 
 const Content = () => {
 
@@ -16,7 +17,7 @@ const Content = () => {
       <Route path="/maps" component={() => <MapsPage />} />
       <Route path="/werewolf-og" component={() => <HomePage />} />
       <Route path="/friedshrimp" component={() => <HomePage />} />
-      <Route path="/werewolf-dlx" component={() => <HomePage />} />
+      <Route path="/werewolf-dlx" component={() => <WerewolfDeluxeMapPage />} />
     </Switch >
 
   )
