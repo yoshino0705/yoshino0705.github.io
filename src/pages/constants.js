@@ -106,7 +106,7 @@ export const ABOUT_PAGE_CONTENT = {
 
 const SCENE_ZH_TW = {
   werewolf_dlx: {
-    preview: '預覽地圖',
+    preview: '地圖預覽',
     snow: '雪町',
     art: '美術館',
     crystal: '水晶風暴',
@@ -118,7 +118,7 @@ const SCENE_ZH_TW = {
 
 const SCENE_EN_US = {
   werewolf_dlx: {
-    preview: 'Preview Landscapes',
+    preview: 'Landscapes Preview',
     snow: 'Snowdin',
     art: 'Art Museum',
     crystal: 'Crystalic Storm',
