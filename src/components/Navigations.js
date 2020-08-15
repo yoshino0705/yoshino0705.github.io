@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { useSelector } from 'react-redux';
+import { useSelector } from 'react-redux'
 import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 import classNames from 'classnames'
@@ -11,10 +11,12 @@ import IconButton from '@material-ui/core/IconButton'
 import { TITLES } from './constants'
 
 import friedshrimp from './assets/friedshrimp.png'
+import ExpandableButton from './Buttons/ExpandableButton'
 
 import map from 'lodash/map'
 import toLower from 'lodash/toLower'
 import includes from 'lodash/includes'
+import get from 'lodash/get'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -46,7 +48,8 @@ const useStyles = makeStyles((theme) => ({
     width: '100%'
   },
   option: {
-    display: 'flex'
+    display: 'flex',
+    alignItems: 'center'
   }
 }));
 
@@ -71,38 +74,49 @@ const Navigations = (props) => {
       direction="row"
       {...rest}
     >
-      {
-        map(options, (o, i) =>
-          <Grid
-            className={classes.option}
-            item
-            key={i}
+      <Grid
+        className={classes.option}
+        item
+      >
+        <Link
+          className={classes.link}
+          to="/home"
+        >
+          <IconButton
+            className={classes.button}
           >
-            <Link
-              className={classes.link}
-              to={`/${o.path}`}
+            <img
+              alt="logo"
+              className={classes.icon}
+              src={friedshrimp}
+            />
+            <Typography
+              className={classNames(
+                classes.text,
+                { [classes.selected]: includes(toLower(pathname), 'home') })}
             >
+              {get(TITLES[language.locale], 'home')}
+            </Typography>
 
-              <IconButton
-                className={classes.button}
-              >
-                <img
-                  alt="logo"
-                  className={classes.icon}
-                  src={friedshrimp}
-                />
-                <Typography
-                  className={classNames(
-                    classes.text,
-                    { [classes.selected]: includes(toLower(pathname), o.path) })}
-                >
-                  {o.label}
-                </Typography>
+          </IconButton>
+        </Link>
+      </Grid>
 
-              </IconButton>
-            </Link>
-          </Grid>)
-      }
+      <Grid
+        className={classes.option}
+        item
+      >
+        <Link
+          className={classes.link}
+          to="/maps"
+        >
+          <ExpandableButton
+            label={get(TITLES[language.locale], 'maps')}
+            options={options}
+          />
+        </Link>
+      </Grid>
+
     </Grid>
   )
 }

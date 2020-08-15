@@ -50,7 +50,7 @@ const Gallery = (props) => {
         swipeable
         emulateTouch
         stopOnHover
-        interval={2000}
+        interval={5000}
         selectedItem={selectedIndex}
         onChange={(e) => setSelectedIndex(e)}
       >

@@ -1,3 +1,5 @@
+import React from 'react'
+
 export const LANGUAGES = {
   'zh-TW': '中文',
   'en-US': 'English'
@@ -56,7 +58,13 @@ const ABOUT_ZH_TW = {
   },
   alex: {
     name: '蘑菇',
-    description: '本群母湯擔當'
+    description: <span>
+      <b style={{ fontWeight: 900 }}>“請問您今天要來點母湯嗎？”</b> <br />
+      <b style={{ fontWeight: 900, textDecoration: 'underline' }}>綽號</b>：Kino/蘑菇<br />
+      <b style={{ fontWeight: 900, textDecoration: 'underline' }}>喜好</b>：蓋模型，打遊戲，耍廢，半夜耍母湯<br />
+      <b style={{ fontWeight: 900, textDecoration: 'underline' }}>特技</b>：母湯<br /><br />
+酷米家族中的深夜車長，歷代作品中的「母湯」的原型，負責小部分的建築，提供點子常常被大姐否決掉的存在，但在當行星對齊的奇蹟般的情況下會被大姐批准。
+</span>
   },
   yoru: {
     name: '夜',
@@ -91,7 +99,12 @@ const ABOUT_EN_US = {
   },
   alex: {
     name: 'Kinoko Neko (Alex)',
-    description: 'The f**\'d up one.'
+    description: <span>
+      <b style={{ fontWeight: 900, textDecoration: 'underline' }}>Nickname</b>: Kino<br />
+      <b style={{ fontWeight: 900, textDecoration: 'underline' }}>Hobbies</b>: building plastic models, gaming, doing nothing at all, being fked up at midnight<br />
+      <b style={{ fontWeight: 900, textDecoration: 'underline' }}>Special Skills</b>: being fked up<br /><br />
+      The skilled “driver” of the Koumi Family, was represented as the mushroom stew in previous maps. Built some interiors of rooms/houses, sometime provide tips and idea but Eve always veto them. However, when the planets align she’s would accept several ideas.
+  </span>
   },
   yoru: {
     name: 'Yoru',
