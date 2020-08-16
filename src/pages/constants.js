@@ -147,3 +147,16 @@ export const SCENE_NAMES = {
   'zh-TW': SCENE_ZH_TW,
   'en-US': SCENE_EN_US
 }
+
+const DL_ZH_TW = {
+  'download_for': '選擇麥塊版本: '
+}
+
+const DL_EN_US = {
+  'download_for': 'Download for Minecraft version: '
+}
+
+export const DL_TEXTS = {
+  'zh-TW': DL_ZH_TW,
+  'en-US': DL_EN_US
+}

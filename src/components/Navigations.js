@@ -1,21 +1,17 @@
 import React from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 import classNames from 'classnames'
 
 import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
 import { TITLES, MAP_TITLES } from './constants'
 
-import friedshrimp from './assets/friedshrimp.png'
 import ExpandableButton from './Buttons/ExpandableButton'
 import IconButton from './Buttons/IconButton'
 
 import map from 'lodash/map'
-import toLower from 'lodash/toLower'
-import includes from 'lodash/includes'
 import get from 'lodash/get'
 
 const useStyles = makeStyles((theme) => ({
@@ -58,8 +54,6 @@ const Navigations = (props) => {
     className,
     ...rest
   } = props
-
-  const { pathname } = useLocation()
 
   const classes = useStyles()
   const language = useSelector(state => state.language)

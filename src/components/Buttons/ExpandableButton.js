@@ -47,14 +47,17 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     background: '#000',
     borderRadius: 12,
-    zIndex: 1000
+    zIndex: 1000,
+    width: '100%'
   }
 }));
 
 const ExpandableButton = (props) => {
   const {
     label,
-    options
+    options,
+    parentIcon,
+    childIcon
   } = props
 
   const classes = useStyles()
@@ -75,11 +78,12 @@ const ExpandableButton = (props) => {
           className={classes.svg}
           onClick={handleToggle}
         >
-          <img
-            alt="logo"
-            className={classes.icon}
-            src={friedshrimp}
-          />
+          {parentIcon ? parentIcon :
+            <img
+              alt="logo"
+              className={classes.icon}
+              src={friedshrimp}
+            />}
           <ListItemText
             className={classes.text}
             primary={label}
@@ -96,15 +100,40 @@ const ExpandableButton = (props) => {
             {
               map(options, o => {
                 return (
-                  <Link to={`/${o.path}`}>
+                  o.path ?
+                    <Link to={`/${o.path}`}>
+                      <ListItem
+                        button
+                        onClick={() => {
+                          setOpen(false)
+                          if (o.onClick) o.onClick()
+                        }}
+                      >
+                        <img
+                          alt="logo"
+                          className={classes.icon}
+                          src={childIcon || friedshrimp}
+                        />
+                        <ListItemText
+                          className={classNames(
+                            classes.text,
+                            { [classes.selected]: includes(toLower(pathname), o.path) })}
+                          primary={o.label}
+                        />
+                      </ListItem>
+                    </Link>
+                    :
                     <ListItem
                       button
-                      onClick={() => setOpen(false)}
+                      onClick={() => {
+                        setOpen(false)
+                        if (o.onClick) o.onClick()
+                      }}
                     >
                       <img
                         alt="logo"
                         className={classes.icon}
-                        src={friedshrimp}
+                        src={childIcon || friedshrimp}
                       />
                       <ListItemText
                         className={classNames(
@@ -113,7 +142,6 @@ const ExpandableButton = (props) => {
                         primary={o.label}
                       />
                     </ListItem>
-                  </Link>
                 )
               })
             }
@@ -130,12 +158,16 @@ const ExpandableButton = (props) => {
 
 ExpandableButton.defaultProps = {
   to: '/',
-  options: []
+  options: [],
+  parentIcon: null,
+  childIcon: null
 }
 
 ExpandableButton.propTypes = {
   to: PropTypes.string,
   options: PropTypes.array,
+  parentIcon: PropTypes.any,
+  childIcon: PropTypes.any,
 }
 
 export default ExpandableButton
