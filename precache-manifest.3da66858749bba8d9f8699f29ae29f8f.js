@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "26b2aa1523eb62cd8fd9eb7a9215b7af",
+    "revision": "f559a8dda0d6f92a973ece78893fd31b",
     "url": "/index.html"
   },
   {
-    "revision": "fc7054df3a1e168e669b",
+    "revision": "45294878912f33bd13d1",
     "url": "/static/css/2.fb346933.chunk.css"
   },
   {
-    "revision": "d8ca7b48ab20dda59764",
+    "revision": "4afdaf321b5f994c379d",
     "url": "/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "fc7054df3a1e168e669b",
-    "url": "/static/js/2.146cf049.chunk.js"
+    "revision": "45294878912f33bd13d1",
+    "url": "/static/js/2.1eb2e65c.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/static/js/2.146cf049.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.1eb2e65c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d8ca7b48ab20dda59764",
-    "url": "/static/js/main.fc01330b.chunk.js"
+    "revision": "4afdaf321b5f994c379d",
+    "url": "/static/js/main.aa9a67d2.chunk.js"
   },
   {
     "revision": "af9f5587a68f06f998dd",
@@ -282,14 +282,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3a866d41dcbce25010e38bacf8679cfd",
     "url": "/static/media/town7.3a866d41.png"
-  },
-  {
-    "revision": "7def7330dc17b6a86ad7ed9dc4ea2a2d",
-    "url": "/static/media/vacation1.7def7330.jfif"
-  },
-  {
-    "revision": "2e42f36d500688ee40e3eb1f484d5c43",
-    "url": "/static/media/venezia0.2e42f36d.jfif"
   },
   {
     "revision": "589c99e79042274be2a47e3aeba4dc69",
