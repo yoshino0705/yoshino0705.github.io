@@ -50,7 +50,6 @@ const useStyles = makeStyles((theme) => ({
   option: {
     display: 'flex',
     alignItems: 'center',
-    width: 180
   }
 }));
 
