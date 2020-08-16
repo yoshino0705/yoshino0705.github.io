@@ -40,8 +40,8 @@ const DownloadOptions = (props) => {
   }
 
   const disableButton = !downloadLink || downloadLink === 'null'
-  const downloadText = type === 'datapack' ? get(DL_TEXTS[locale], 'download_datapack') : get(DL_TEXTS[locale], 'download_map')
-
+  const downloadLabel = type === 'datapack' ? get(DL_TEXTS[locale], 'download_datapack') : get(DL_TEXTS[locale], 'download_map')
+  const downloadText = get(DL_TEXTS[locale], 'download')
   return (
     <Grid
       alignItems="center"
@@ -53,7 +53,7 @@ const DownloadOptions = (props) => {
       <Grid item>
         <Dropdown
           getSelectedOption={handleSelectionChange}
-          label={downloadText}
+          label={downloadLabel}
           options={selectionList}
         />
       </Grid>

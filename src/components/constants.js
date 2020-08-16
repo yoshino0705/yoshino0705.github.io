@@ -60,13 +60,15 @@ export const MAP_NAMES = {
 const DL_ZH_TW = {
   download_for: '選擇麥塊版本',
   download_map: '下載地圖',
-  download_datapack: '下載資料包'
+  download_datapack: '下載資料包',
+  download: '下載'
 }
 
 const DL_EN_US = {
   download_for: 'Download for Minecraft',
   download_map: 'Download Map',
-  download_datapack: 'Download Datapack'
+  download_datapack: 'Download Datapack',
+  download: 'Download'
 }
 
 export const DL_TEXTS = {
