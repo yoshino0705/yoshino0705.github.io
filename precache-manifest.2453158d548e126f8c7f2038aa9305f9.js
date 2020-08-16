@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "47f809fe62d9f8eff49dced835428831",
+    "revision": "4992740036702277244757ffefca8352",
     "url": "/index.html"
   },
   {
-    "revision": "f796a91aaf6210ab0f98",
+    "revision": "b74cd66edcb95b210436",
     "url": "/static/css/2.fb346933.chunk.css"
   },
   {
-    "revision": "4a7b2c4500c542729332",
+    "revision": "85f8af00fc80b2421150",
     "url": "/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "f796a91aaf6210ab0f98",
-    "url": "/static/js/2.4b520e90.chunk.js"
+    "revision": "b74cd66edcb95b210436",
+    "url": "/static/js/2.03c9b5f9.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/static/js/2.4b520e90.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.03c9b5f9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4a7b2c4500c542729332",
-    "url": "/static/js/main.51bb3175.chunk.js"
+    "revision": "85f8af00fc80b2421150",
+    "url": "/static/js/main.6aa9ec23.chunk.js"
   },
   {
     "revision": "af9f5587a68f06f998dd",
@@ -176,12 +176,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/lightDe.ae1b986b.jpg"
   },
   {
+    "revision": "e0c8f6034b143211059c49e52a6dea5b",
+    "url": "/static/media/lobby.e0c8f603.jfif"
+  },
+  {
+    "revision": "f1fd069c19396a5865314268d0a513e4",
+    "url": "/static/media/mushroom0.f1fd069c.jfif"
+  },
+  {
+    "revision": "a372792a94ec29b034252386c3cc617d",
+    "url": "/static/media/mushroom1.a372792a.jfif"
+  },
+  {
     "revision": "b21079d3de9faec3a5bc721d4227e7b9",
     "url": "/static/media/sea0.b21079d3.jpg"
   },
   {
+    "revision": "ff6bd70e233290f52818dbec480dd2a7",
+    "url": "/static/media/sea0.ff6bd70e.jfif"
+  },
+  {
     "revision": "5a3bc14ab3898b577c315e536d4e2ad4",
     "url": "/static/media/sea1.5a3bc14a.jpg"
+  },
+  {
+    "revision": "af596220259220c1371743fd4f13f83c",
+    "url": "/static/media/sea1.af596220.jfif"
   },
   {
     "revision": "e7fd72011f3c415e77407ec64f521ad6",
@@ -296,12 +316,40 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/snow9.ea533699.jpg"
   },
   {
+    "revision": "f21fd121ae92609188b1b274db6d182b",
+    "url": "/static/media/space0.f21fd121.jfif"
+  },
+  {
+    "revision": "6b20224e069cba4670f9b8a3dc6fc46b",
+    "url": "/static/media/space1.6b20224e.jfif"
+  },
+  {
+    "revision": "c31376e49a5b2d25faf39e5311bad318",
+    "url": "/static/media/space2.c31376e4.jfif"
+  },
+  {
+    "revision": "aa610c6dbd9fc935905f9591008653bd",
+    "url": "/static/media/space3.aa610c6d.jfif"
+  },
+  {
+    "revision": "25217a91ff0f92a75a16f7790e7c9e11",
+    "url": "/static/media/town0.25217a91.jfif"
+  },
+  {
     "revision": "2930897bb1e8912737121dbc7872072f",
     "url": "/static/media/town0.2930897b.jpg"
   },
   {
     "revision": "99d9bae9f0376bc2b3075e3fbd7c7043",
     "url": "/static/media/town1.99d9bae9.jpg"
+  },
+  {
+    "revision": "d542556dc4d0f1e2a4b4597db2caecc6",
+    "url": "/static/media/town1.d542556d.jfif"
+  },
+  {
+    "revision": "3e436d9e84ac1b1ab643f0a5a71a8270",
+    "url": "/static/media/town2.3e436d9e.jfif"
   },
   {
     "revision": "45ac7e04176cc4c5087b7edea828eaf0",
@@ -312,20 +360,72 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/town3.52ccdfa0.jpg"
   },
   {
+    "revision": "980ac841439d706eb667cd43c7977b02",
+    "url": "/static/media/town3.980ac841.jfif"
+  },
+  {
+    "revision": "0ee84c5abefd0c9d1c7d54bc955c3443",
+    "url": "/static/media/town4.0ee84c5a.jfif"
+  },
+  {
     "revision": "8b631ab9bb1dfcb5cab249721cb23e0a",
     "url": "/static/media/town4.8b631ab9.jpg"
+  },
+  {
+    "revision": "cc2a8f3cc4f990787af6f206fd3b0b1b",
+    "url": "/static/media/town5.cc2a8f3c.jfif"
   },
   {
     "revision": "ea5aaaeb0c69e744149e01767c2b079c",
     "url": "/static/media/town5.ea5aaaeb.jpg"
   },
   {
+    "revision": "36dbb7ccfb283be4c57a2a8bf5b6d05f",
+    "url": "/static/media/town6.36dbb7cc.jfif"
+  },
+  {
     "revision": "7a7267cab37abf683c2abd9257893e34",
     "url": "/static/media/town6.7a7267ca.jpg"
   },
   {
+    "revision": "8701a618ad4b659a141ab2e781d558c9",
+    "url": "/static/media/town7.8701a618.jfif"
+  },
+  {
     "revision": "c34990e6c01c94ce60efc65f53afef24",
     "url": "/static/media/town7.c34990e6.jpg"
+  },
+  {
+    "revision": "9fad660ba5cf675e7668541ccd9b2a38",
+    "url": "/static/media/town8.9fad660b.jfif"
+  },
+  {
+    "revision": "4ed51c1f1d987e9f704a1dd232e1791a",
+    "url": "/static/media/town9.4ed51c1f.jfif"
+  },
+  {
+    "revision": "ad06fab873ac79562eb6e53c197618b8",
+    "url": "/static/media/vacation0.ad06fab8.jfif"
+  },
+  {
+    "revision": "7def7330dc17b6a86ad7ed9dc4ea2a2d",
+    "url": "/static/media/vacation1.7def7330.jfif"
+  },
+  {
+    "revision": "ec49555abeec354e527bbc18a3114d77",
+    "url": "/static/media/vacation2.ec49555a.jfif"
+  },
+  {
+    "revision": "b1cd8952546a378e666f8e9812e06084",
+    "url": "/static/media/vacation3.b1cd8952.jfif"
+  },
+  {
+    "revision": "6288dc93168c70ef8838204fb2fa5b86",
+    "url": "/static/media/vacation4.6288dc93.jfif"
+  },
+  {
+    "revision": "aa10ffb14ea244c97ac19d74dd336e69",
+    "url": "/static/media/vacation5.aa10ffb1.jfif"
   },
   {
     "revision": "2e42f36d500688ee40e3eb1f484d5c43",
