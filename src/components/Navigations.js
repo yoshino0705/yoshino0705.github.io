@@ -7,11 +7,11 @@ import classNames from 'classnames'
 
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
-import IconButton from '@material-ui/core/IconButton'
 import { TITLES, MAP_TITLES } from './constants'
 
 import friedshrimp from './assets/friedshrimp.png'
 import ExpandableButton from './Buttons/ExpandableButton'
+import IconButton from './Buttons/IconButton'
 
 import map from 'lodash/map'
 import toLower from 'lodash/toLower'
@@ -49,7 +49,8 @@ const useStyles = makeStyles((theme) => ({
   },
   option: {
     display: 'flex',
-    alignItems: 'center'
+    alignItems: 'center',
+    width: 180
   }
 }));
 
@@ -83,22 +84,24 @@ const Navigations = (props) => {
           to="/home"
         >
           <IconButton
-            className={classes.button}
-          >
-            <img
-              alt="logo"
-              className={classes.icon}
-              src={friedshrimp}
-            />
-            <Typography
-              className={classNames(
-                classes.text,
-                { [classes.selected]: includes(toLower(pathname), 'home') })}
-            >
-              {get(TITLES[language.locale], 'home')}
-            </Typography>
+            label={get(TITLES[language.locale], 'home')}
+            path="/home"
+          />
+        </Link>
+      </Grid>
 
-          </IconButton>
+      <Grid
+        className={classes.option}
+        item
+      >
+        <Link
+          className={classes.link}
+          to="/members"
+        >
+          <IconButton
+            label={get(TITLES[language.locale], 'members')}
+            path="/members"
+          />
         </Link>
       </Grid>
 

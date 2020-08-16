@@ -22,8 +22,7 @@ import includes from 'lodash/includes'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%',
-    minWidth: 180,
+    width: 200,
     backgroundColor: 'transparent',
   },
   icon: {

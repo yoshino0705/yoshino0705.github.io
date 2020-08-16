@@ -37,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
   langSelect: {
     display: 'flex',
     justifyContent: 'flex-end'
+  },
+  nav: {
+    display: 'flex'
   }
 }));
 
@@ -70,6 +73,7 @@ const Header = (props) => {
             justify="center"
           >
             <Grid
+              className={classes.nav}
               item
               md={9}
               sm={6}

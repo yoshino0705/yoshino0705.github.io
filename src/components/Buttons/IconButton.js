@@ -16,8 +16,7 @@ import includes from 'lodash/includes'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%',
-    minWidth: 180,
+    width: 200,
     backgroundColor: 'transparent',
   },
   icon: {
@@ -41,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
 const IconButton = (props) => {
   const {
     label,
+    path,
     ...rest
   } = props
 
@@ -66,7 +66,7 @@ const IconButton = (props) => {
         <ListItemText
           className={classNames(
             classes.text,
-            { [classes.selected]: includes(toLower(pathname), o.path) })}
+            { [classes.selected]: includes(toLower(pathname), path) })}
           primary={label}
         />
       </ListItem>
@@ -77,11 +77,13 @@ const IconButton = (props) => {
 }
 
 IconButton.defaultProps = {
-  label: ''
+  label: '',
+  path: ''
 }
 
 IconButton.propTypes = {
-  label: PropTypes.string
+  label: PropTypes.string,
+  path: PropTypes.string
 }
 
 export default IconButton
