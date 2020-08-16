@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "33bde3a958ff809a46e7f0f0c64b3381",
+    "revision": "47f809fe62d9f8eff49dced835428831",
     "url": "/index.html"
   },
   {
-    "revision": "45294878912f33bd13d1",
+    "revision": "f796a91aaf6210ab0f98",
     "url": "/static/css/2.fb346933.chunk.css"
   },
   {
-    "revision": "e70ac496fa0e06454464",
+    "revision": "4a7b2c4500c542729332",
     "url": "/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "45294878912f33bd13d1",
-    "url": "/static/js/2.1eb2e65c.chunk.js"
+    "revision": "f796a91aaf6210ab0f98",
+    "url": "/static/js/2.4b520e90.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/static/js/2.1eb2e65c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.4b520e90.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e70ac496fa0e06454464",
-    "url": "/static/js/main.a01c2582.chunk.js"
+    "revision": "4a7b2c4500c542729332",
+    "url": "/static/js/main.51bb3175.chunk.js"
   },
   {
     "revision": "af9f5587a68f06f998dd",
@@ -140,6 +140,34 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/friedshrimp.827e951f.png"
   },
   {
+    "revision": "231cb51ae6ab54e551a8f135d7e7eed4",
+    "url": "/static/media/hotel0.231cb51a.jfif"
+  },
+  {
+    "revision": "14e979b451491fb3688bd29a21897237",
+    "url": "/static/media/hotel1.14e979b4.jfif"
+  },
+  {
+    "revision": "0497c4d762e59ec4648786dc77647eca",
+    "url": "/static/media/hotel2.0497c4d7.jfif"
+  },
+  {
+    "revision": "46ad1528e3ba4aa65a4d386906475332",
+    "url": "/static/media/hotel3.46ad1528.jfif"
+  },
+  {
+    "revision": "5ef6105756753af12dc89fbf45e81d2f",
+    "url": "/static/media/hotel4.5ef61057.jfif"
+  },
+  {
+    "revision": "815895b154534023a043c5dd23616c63",
+    "url": "/static/media/hotel5.815895b1.jfif"
+  },
+  {
+    "revision": "4f9c2843deded11af97bbc1014216096",
+    "url": "/static/media/hotel6.4f9c2843.jfif"
+  },
+  {
     "revision": "f00fca65453ca9c1035eda4d0626323d",
     "url": "/static/media/koumi2.f00fca65.jpg"
   },
@@ -178,6 +206,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c7d8481be1082ea1676d22bab9279f3a",
     "url": "/static/media/sea7.c7d8481b.jpg"
+  },
+  {
+    "revision": "6f9df2d33471ab9f52ca9d08b92108c2",
+    "url": "/static/media/shrine0.6f9df2d3.jfif"
+  },
+  {
+    "revision": "c8dd30e3d5800a8df047825ebfab8e09",
+    "url": "/static/media/shrine1.c8dd30e3.jfif"
+  },
+  {
+    "revision": "fe4885a9047ebe56937435d58a55a5b2",
+    "url": "/static/media/shrine2.fe4885a9.jfif"
+  },
+  {
+    "revision": "cdd16e7bebd4fb5530759e91a627ba4a",
+    "url": "/static/media/shrine3.cdd16e7b.jfif"
   },
   {
     "revision": "0d4dd09836b363e24d2e6d5b29643944",
@@ -282,6 +326,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c34990e6c01c94ce60efc65f53afef24",
     "url": "/static/media/town7.c34990e6.jpg"
+  },
+  {
+    "revision": "2e42f36d500688ee40e3eb1f484d5c43",
+    "url": "/static/media/venezia0.2e42f36d.jfif"
+  },
+  {
+    "revision": "6f638437dfc9e496e131e639fefca1b5",
+    "url": "/static/media/venezia1.6f638437.jfif"
+  },
+  {
+    "revision": "2214ba6b4f7b922b1a2b5baa512f5478",
+    "url": "/static/media/venezia2.2214ba6b.jfif"
   },
   {
     "revision": "589c99e79042274be2a47e3aeba4dc69",
