@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 
 import HomePage from '../pages/HomePage'
 import MembersPage from '../pages/MembersPage'
-import MapsPage from '../pages/MapsPage'
+// import MapsPage from '../pages/MapsPage'
 import WerewolfDeluxeMapPage from '../pages/WerewolfDeluxeMapPage'
 
 const Content = () => {

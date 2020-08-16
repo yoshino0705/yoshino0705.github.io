@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import FileSaver from 'file-saver';
+// import FileSaver from 'file-saver';
 import { useSelector } from 'react-redux'
 
 import { SCENE_NAMES } from './constants'
@@ -112,11 +112,11 @@ const WerewolfDeluxeMapPage = () => {
   const seaImages = [sea0, sea1, sea2, sea3, sea4, sea5, sea6, sea7]
   const [images, setImages] = useState(snowImages)
 
-  const onDownload = () => {
-    FileSaver.saveAs(
-      process.env.PUBLIC_URL + "/downloads/datapack.zip",
-      "Werewolf_Datapack.zip");
-  }
+  // const onDownload = () => {
+  //   FileSaver.saveAs(
+  //     process.env.PUBLIC_URL + "/downloads/datapack.zip",
+  //     "Werewolf_Datapack.zip");
+  // }
 
   const language = useSelector(state => state.language)
   const content = get(SCENE_NAMES[language.locale], 'werewolf_dlx')
