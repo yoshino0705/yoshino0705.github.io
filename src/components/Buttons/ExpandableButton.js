@@ -98,12 +98,16 @@ const ExpandableButton = (props) => {
 
           <List component="div" disablePadding>
             {
-              map(options, o => {
+              map(options, (o, i) => {
                 return (
                   o.path ?
-                    <Link to={`/${o.path}`}>
+                    <Link
+                      key={i}
+                      to={`/${o.path}`}
+                    >
                       <ListItem
                         button
+                        key={i}
                         onClick={() => {
                           setOpen(false)
                           if (o.onClick) o.onClick()
@@ -125,6 +129,7 @@ const ExpandableButton = (props) => {
                     :
                     <ListItem
                       button
+                      key={i}
                       onClick={() => {
                         setOpen(false)
                         if (o.onClick) o.onClick()

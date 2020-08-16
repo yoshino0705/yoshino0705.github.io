@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 import classNames from 'classnames'
 
 import Paper from '@material-ui/core/Paper'
-import { TITLES } from './constants'
+import { TITLES, MAP_TITLES } from './constants'
 
 import get from 'lodash/get'
 
@@ -29,7 +29,7 @@ const Page = (props) => {
 
   const classes = useStyles()
   const language = useSelector(state => state.language)
-  const titleLabel = get(TITLES[language.locale], title)
+  const titleLabel = get(TITLES[language.locale], title) || get(MAP_TITLES[language.locale], title)
 
   return (
     <Paper

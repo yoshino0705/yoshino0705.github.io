@@ -128,6 +128,21 @@ const SCENE_ZH_TW = {
     comm: '河堤社區',
     town: '經典城鎮',
     sea: '海底都市',
+  },
+  friedshrimp: {
+    preview: '地圖預覽',
+    venezia: '威尼斯小鎮',
+    shrine: '花村',
+    hotel: '酷米溫泉旅館'
+  },
+  werewolf_og: {
+    preview: '地圖預覽',
+    town: '經典城鎮',
+    mushroom: '母湯沼澤',
+    sea: '亞特蘭提斯',
+    vacation: '渡假村',
+    space: '銀河邊境',
+    lobby: '遊戲大廳'
   }
 }
 
@@ -140,6 +155,21 @@ const SCENE_EN_US = {
     comm: 'River Bank Community',
     town: 'Classic Town',
     sea: 'Underwater City',
+  },
+  friedshrimp: {
+    preview: 'Landscapes Preview',
+    venezia: 'Venezia',
+    shrine: 'Cherry Blossom Village',
+    hotel: 'Koumi\'s Hot Spring Hotel'
+  },
+  werewolf_og: {
+    preview: 'Landscapes Preview',
+    town: 'Classic Town',
+    mushroom: 'Mushroom Swamp',
+    sea: 'Atlantis',
+    vacation: 'Resort',
+    space: 'Galaxy Boundary',
+    lobby: 'Lobby'
   }
 }
 

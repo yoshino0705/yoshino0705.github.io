@@ -1,0 +1,116 @@
+import React, { useState } from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+// import FileSaver from 'file-saver';
+import { useSelector } from 'react-redux'
+
+import { SCENE_NAMES } from '../constants'
+import Grid from '@material-ui/core/Grid'
+
+import Gallery from '../../components/Gallery'
+import Page from '../../components/Page'
+import Dropdown from '../../components/Dropdown'
+
+import venezia0 from '../../components/assets/maps/friedshrimp/venezia/venezia0.jfif'
+import venezia1 from '../../components/assets/maps/friedshrimp/venezia/venezia1.jfif'
+import venezia2 from '../../components/assets/maps/friedshrimp/venezia/venezia2.jfif'
+
+import shrine0 from '../../components/assets/maps/friedshrimp/shrine/shrine0.jfif'
+import shrine1 from '../../components/assets/maps/friedshrimp/shrine/shrine1.jfif'
+import shrine2 from '../../components/assets/maps/friedshrimp/shrine/shrine2.jfif'
+import shrine3 from '../../components/assets/maps/friedshrimp/shrine/shrine3.jfif'
+
+import hotel0 from '../../components/assets/maps/friedshrimp/hotel/hotel0.jfif'
+import hotel1 from '../../components/assets/maps/friedshrimp/hotel/hotel1.jfif'
+import hotel2 from '../../components/assets/maps/friedshrimp/hotel/hotel2.jfif'
+import hotel3 from '../../components/assets/maps/friedshrimp/hotel/hotel3.jfif'
+import hotel4 from '../../components/assets/maps/friedshrimp/hotel/hotel4.jfif'
+import hotel5 from '../../components/assets/maps/friedshrimp/hotel/hotel5.jfif'
+import hotel6 from '../../components/assets/maps/friedshrimp/hotel/hotel6.jfif'
+
+import get from 'lodash/get'
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    position: 'relative',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column'
+  },
+  galleryContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    width: '90%',
+    marginTop: theme.spacing(3)
+  },
+
+}));
+
+
+const FriedshrimpPage = () => {
+
+  const classes = useStyles()
+
+  const veneziaImages = [
+    venezia0, venezia1, venezia2
+  ]
+  const shrineImages = [shrine0, shrine1, shrine2, shrine3]
+  const hotelImages = [
+    hotel0, hotel1, hotel2, hotel3, hotel4, hotel5, hotel6
+  ]
+
+  const [images, setImages] = useState(veneziaImages)
+
+  const language = useSelector(state => state.language)
+  const content = get(SCENE_NAMES[language.locale], 'friedshrimp')
+
+  const mapOptions = [
+    { label: get(content, 'venezia'), value: 'venezia' },
+    { label: get(content, 'shrine'), value: 'shrine' },
+    { label: get(content, 'hotel'), value: 'hotel' },
+  ]
+
+  const getSelectedMap = (val) => {
+    switch (val) {
+      case 'venezia':
+        setImages(veneziaImages)
+        break
+      case 'shrine':
+        setImages(shrineImages)
+        break
+      case 'hotel':
+        setImages(hotelImages)
+        break
+      default:
+        setImages(veneziaImages)
+    }
+  }
+
+  return (
+    <Page
+      className={classes.root}
+      title="friedshrimp"
+    >
+      <div className={classes.galleryContainer}>
+        <Gallery
+          images={images}
+        />
+      </div>
+      <Grid
+        container
+        justify="center"
+      >
+        <Grid item>
+          <Dropdown
+            getSelectedOption={getSelectedMap}
+            label={get(content, 'preview')}
+            options={mapOptions}
+          />
+        </Grid>
+      </Grid>
+
+    </Page>
+  )
+}
+
+export default FriedshrimpPage
