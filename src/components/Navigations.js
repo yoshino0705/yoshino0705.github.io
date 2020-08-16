@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import PropTypes from 'prop-types'
@@ -8,7 +8,7 @@ import classNames from 'classnames'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import IconButton from '@material-ui/core/IconButton'
-import { TITLES } from './constants'
+import { TITLES, MAP_TITLES } from './constants'
 
 import friedshrimp from './assets/friedshrimp.png'
 import ExpandableButton from './Buttons/ExpandableButton'
@@ -63,7 +63,7 @@ const Navigations = (props) => {
 
   const classes = useStyles()
   const language = useSelector(state => state.language)
-  const options = map(TITLES[language.locale], (val, key) => {
+  const options = map(MAP_TITLES[language.locale], (val, key) => {
     return { label: val, path: key }
   })
 
@@ -106,15 +106,10 @@ const Navigations = (props) => {
         className={classes.option}
         item
       >
-        <Link
-          className={classes.link}
-          to="/maps"
-        >
-          <ExpandableButton
-            label={get(TITLES[language.locale], 'maps')}
-            options={options}
-          />
-        </Link>
+        <ExpandableButton
+          label={get(TITLES[language.locale], 'maps')}
+          options={options}
+        />
       </Grid>
 
     </Grid>

@@ -13,12 +13,12 @@ import ExpandMore from '@material-ui/icons/ExpandMore'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
+import ClickAwayListener from '@material-ui/core/ClickAwayListener'
 
 
 import map from 'lodash/map'
 import toLower from 'lodash/toLower'
 import includes from 'lodash/includes'
-import get from 'lodash/get'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -44,6 +44,12 @@ const useStyles = makeStyles((theme) => ({
   },
   svg: {
     color: '#fff'
+  },
+  collapseMenu: {
+    position: 'absolute',
+    background: '#000',
+    borderRadius: 12,
+    zIndex: 1000
   }
 }));
 
@@ -60,52 +66,66 @@ const ExpandableButton = (props) => {
   const handleToggle = () => setOpen(!open)
 
   return (
-    <List
-      component="div"
-      className={classes.root}
-      disablePadding
-    >
-      <ListItem
-        button
-        className={classes.svg}
-        onClick={handleToggle}
+    <ClickAwayListener onClickAway={() => setOpen(false)}>
+      <List
+        component="div"
+        className={classes.root}
+        disablePadding
       >
-        <img
-          alt="logo"
-          className={classes.icon}
-          src={friedshrimp}
-        />
-        <ListItemText
-          className={classes.text}
-          primary={label}
-        />
-        {open ? <ExpandLess className={classes.svg} /> : <ExpandMore className={classes.svg} />}
-      </ListItem>
-      <Collapse in={open} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          {
-            map(options, o => {
-              return (
-                <ListItem button>
-                  <img
-                    alt="logo"
-                    className={classes.icon}
-                    src={friedshrimp}
-                  />
-                  <ListItemText
-                    className={classNames(
-                      classes.text,
-                      { [classes.selected]: includes(toLower(pathname), o.path) })}
-                    primary={o.label}
-                  />
-                </ListItem>)
-            })
-          }
+        <ListItem
+          button
+          className={classes.svg}
+          onClick={handleToggle}
+        >
+          <img
+            alt="logo"
+            className={classes.icon}
+            src={friedshrimp}
+          />
+          <ListItemText
+            className={classes.text}
+            primary={label}
+          />
+          {open ? <ExpandLess className={classes.svg} /> : <ExpandMore className={classes.svg} />}
+        </ListItem>
+        <Collapse
+          className={classes.collapseMenu}
+          in={open}
+          timeout="auto"
+        >
+
+          <List component="div" disablePadding>
+            {
+              map(options, o => {
+                return (
+                  <Link to={`/${o.path}`}>
+                    <ListItem
+                      button
+                      onClick={() => setOpen(false)}
+                    >
+                      <img
+                        alt="logo"
+                        className={classes.icon}
+                        src={friedshrimp}
+                      />
+                      <ListItemText
+                        className={classNames(
+                          classes.text,
+                          { [classes.selected]: includes(toLower(pathname), o.path) })}
+                        primary={o.label}
+                      />
+                    </ListItem>
+                  </Link>
+                )
+              })
+            }
 
 
-        </List>
-      </Collapse>
-    </List>
+          </List>
+
+        </Collapse>
+      </List>
+    </ClickAwayListener>
   )
 
 }
