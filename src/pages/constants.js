@@ -19,7 +19,7 @@ const HOME_EN_US = {
   koumi: 'The Koumi Family\'s',
   welcome: 'Welcome to',
   website: 'Website',
-  introduction: 'We started off as people chatting in the same channel on an app, after we released our first map creation in 2018 and it gained a lot of popularity, we gradually became a Minecraft map making team.',
+  introduction: 'We started off as random people chatting on the internet, after we released our first map creation in 2018 and it gained a lot of popularity, we gradually became a Minecraft map making team.',
   werewolf: 'The Werewolf Game',
   werewolf_note: 'Similar to Town of Salem, but with different roles, abilities, and playstyle deviations'
 }
@@ -176,17 +176,4 @@ const SCENE_EN_US = {
 export const SCENE_NAMES = {
   'zh-TW': SCENE_ZH_TW,
   'en-US': SCENE_EN_US
-}
-
-const DL_ZH_TW = {
-  'download_for': '選擇麥塊版本: '
-}
-
-const DL_EN_US = {
-  'download_for': 'Download for Minecraft version: '
-}
-
-export const DL_TEXTS = {
-  'zh-TW': DL_ZH_TW,
-  'en-US': DL_EN_US
 }

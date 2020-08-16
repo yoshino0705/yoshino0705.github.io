@@ -56,3 +56,20 @@ export const MAP_NAMES = {
   'zh-TW': MAP_ZH_TW,
   'en-US': MAP_EN_US
 }
+
+const DL_ZH_TW = {
+  download_for: '選擇麥塊版本',
+  download_map: '下載地圖',
+  download_datapack: '下載資料包'
+}
+
+const DL_EN_US = {
+  download_for: 'Download for Minecraft',
+  download_map: 'Download Map',
+  download_datapack: 'Download Datapack'
+}
+
+export const DL_TEXTS = {
+  'zh-TW': DL_ZH_TW,
+  'en-US': DL_EN_US
+}

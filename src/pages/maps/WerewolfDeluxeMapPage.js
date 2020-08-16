@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-// import FileSaver from 'file-saver';
 import { useSelector } from 'react-redux'
 
 import { SCENE_NAMES } from '../constants'
@@ -76,13 +75,16 @@ import sea7 from '../../components/assets/maps/werewolf_dlx/sea/sea7.jpg'
 
 import get from 'lodash/get'
 
+import DownloadOptions from '../../components/DownloadOptions'
+
 const useStyles = makeStyles((theme) => ({
   root: {
     position: 'relative',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    paddingBottom: 300
   },
   galleryContainer: {
     display: 'flex',
@@ -111,12 +113,6 @@ const WerewolfDeluxeMapPage = () => {
   const townImages = [town0, town1, town2, town3, town4, town5, town6, town7]
   const seaImages = [sea0, sea1, sea2, sea3, sea4, sea5, sea6, sea7]
   const [images, setImages] = useState(snowImages)
-
-  // const onDownload = () => {
-  //   FileSaver.saveAs(
-  //     process.env.PUBLIC_URL + "/downloads/datapack.zip",
-  //     "Werewolf_Datapack.zip");
-  // }
 
   const language = useSelector(state => state.language)
   const content = get(SCENE_NAMES[language.locale], 'werewolf_dlx')
@@ -155,6 +151,14 @@ const WerewolfDeluxeMapPage = () => {
     }
   }
 
+  const mapDownloadOptions = [
+    { label: '1.16', value: 'http://download.koumifamily.com/index.php?share/file&user=100&sid=64UhcBzK' }
+  ]
+
+  const datapackDownloadOptions = [
+    { label: '1.16', value: 'http://download.koumifamily.com/index.php?share/file&user=100&sid=5zNajigI' }
+  ]
+
   return (
     <Page
       className={classes.root}
@@ -166,7 +170,9 @@ const WerewolfDeluxeMapPage = () => {
         />
       </div>
       <Grid
+        alignItems="center"
         container
+        direction="column"
         justify="center"
       >
         <Grid item>
@@ -176,6 +182,14 @@ const WerewolfDeluxeMapPage = () => {
             options={mapOptions}
           />
         </Grid>
+        <DownloadOptions
+          options={mapDownloadOptions}
+          type="map"
+        />
+        <DownloadOptions
+          options={datapackDownloadOptions}
+          type="datapack"
+        />
       </Grid>
 
     </Page>

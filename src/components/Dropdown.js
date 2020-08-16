@@ -65,6 +65,7 @@ const Dropdown = (props) => {
           select
           label={label}
           value={value}
+          InputLabelProps={{ shrink: true }}
           onChange={handleChange}
           helperText={helperText}
           variant="filled"
