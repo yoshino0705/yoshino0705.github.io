@@ -62,7 +62,7 @@ const DownloadOptions = (props) => {
           color="primary"
           disabled={disableButton}
           onClick={() => {
-            window.open(downloadLink, "_blank")
+            window.open(downloadLink, '_blank', 'noopener')
           }}
           variant="contained"
         >
