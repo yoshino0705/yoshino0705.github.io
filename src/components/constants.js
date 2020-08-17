@@ -7,14 +7,14 @@ const TITLE_ZH_TW = {
   'home': '酷米家族',
   'members': '家族成員',
   'maps': '作品一覽',
-
+  'contact': '聯絡我們'
 }
 
 const TITLE_EN_US = {
   'home': 'Koumi Family',
   'members': 'Members',
   'maps': 'Minecraft Maps',
-
+  'contact': 'Contact Us'
 }
 
 export const TITLES = {

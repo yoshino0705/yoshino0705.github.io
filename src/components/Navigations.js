@@ -107,6 +107,21 @@ const Navigations = (props) => {
         />
       </Grid>
 
+      <Grid
+        className={classes.option}
+        item
+      >
+        <a
+          className={classes.link}
+          href="mailto:contact@koumifamily.com"
+        >
+          <IconButton
+            disableHightlight
+            label={get(TITLES[language.locale], 'contact')}
+          />
+        </a>
+      </Grid>
+
     </Grid>
   )
 }

@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
 
 const IconButton = (props) => {
   const {
+    disableHightlight,
     label,
     path,
     ...rest
@@ -65,7 +66,7 @@ const IconButton = (props) => {
         <ListItemText
           className={classNames(
             classes.text,
-            { [classes.selected]: includes(toLower(pathname), path) })}
+            { [classes.selected]: !disableHightlight && includes(toLower(pathname), path) })}
           primary={label}
         />
       </ListItem>
@@ -76,11 +77,13 @@ const IconButton = (props) => {
 }
 
 IconButton.defaultProps = {
+  disableHightlight: false,
   label: '',
   path: ''
 }
 
 IconButton.propTypes = {
+  disableHightlight: PropTypes.bool,
   label: PropTypes.string,
   path: PropTypes.string
 }
