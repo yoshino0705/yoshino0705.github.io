@@ -36,7 +36,13 @@ const useStyles = makeStyles((theme) => ({
   },
   langSelect: {
     display: 'flex',
-    justifyContent: 'flex-end'
+    justifyContent: 'flex-end',
+    position: 'absolute',
+    right: theme.spacing(2),
+    [theme.breakpoints.down('sm')]: {
+      position: 'relative',
+      right: 'auto'
+    },
   },
   nav: {
     display: 'flex'
@@ -75,7 +81,7 @@ const Header = (props) => {
             <Grid
               className={classes.nav}
               item
-              md={10}
+              md={12}
               sm={6}
             >
               <Navigations />
