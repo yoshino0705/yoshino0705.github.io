@@ -29,7 +29,7 @@ const MAP_TITLES_ZH_TW = {
 }
 
 const MAP_TITLES_EN_US = {
-  'werewolf-og': 'The Werewolf Game',
+  'werewolf-og': 'The Werewolf Game (Mafia)',
   'friedshrimp': 'For Fried Shrimp',
   'werewolf-dlx': 'The Werewolf Game: Deluxe Edition'
 }
@@ -47,7 +47,7 @@ const MAP_ZH_TW = {
 }
 
 const MAP_EN_US = {
-  werewolf_og: 'The Werewolf Game',
+  werewolf_og: 'The Werewolf Game (Mafia)',
   friedshrimp: 'If it\'s for fried shrimp, I\'d even defeat the Inspectors',
   werewolf_dlx: 'The Werewolf Game: Deluxe Edition'
 }

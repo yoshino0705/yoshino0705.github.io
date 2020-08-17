@@ -75,7 +75,7 @@ const Header = (props) => {
             <Grid
               className={classes.nav}
               item
-              md={9}
+              md={10}
               sm={6}
             >
               <Navigations />
@@ -83,7 +83,7 @@ const Header = (props) => {
             <Grid
               className={classes.langSelect}
               item
-              md={3}
+              md={2}
               sm={6}
             >
               <LanguageDropdown />
