@@ -42,6 +42,7 @@ import space3 from '../../components/assets/maps/werewolf_og/space/space3.jfif'
 import lobby from '../../components/assets/maps/werewolf_og/lobby.jfif'
 
 import get from 'lodash/get'
+import DownloadOptions from '../../components/DownloadOptions'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,7 +50,8 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    paddingBottom: 300
   },
   galleryContainer: {
     display: 'flex',
@@ -119,6 +121,11 @@ const WerewolfOGPage = () => {
     }
   }
 
+  const mapDownloadOptions = [
+    { label: '1.14.2', value: 'http://download.koumifamily.com/index.php?share/file&user=100&sid=6xqmesrS' },
+    { label: '1.13.2', value: 'http://download.koumifamily.com/index.php?share/file&user=100&sid=YWBmnX7K' }
+  ]
+
   return (
     <Page
       className={classes.root}
@@ -140,6 +147,10 @@ const WerewolfOGPage = () => {
             options={mapOptions}
           />
         </Grid>
+        <DownloadOptions
+          options={mapDownloadOptions}
+          type="map"
+        />
       </Grid>
 
     </Page>

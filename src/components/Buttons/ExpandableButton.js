@@ -49,6 +49,9 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 12,
     zIndex: 1000,
     width: '100%'
+  },
+  link: {
+    textDecoration: 'none'
   }
 }));
 
@@ -102,6 +105,7 @@ const ExpandableButton = (props) => {
                 return (
                   o.path ?
                     <Link
+                      className={classes.link}
                       key={i}
                       to={`/${o.path}`}
                     >

@@ -65,7 +65,7 @@ const DL_ZH_TW = {
 }
 
 const DL_EN_US = {
-  download_for: 'Download for Minecraft',
+  download_for: 'Select Minecraft Version',
   download_map: 'Download Map',
   download_datapack: 'Download Datapack',
   download: 'Download'

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-// import FileSaver from 'file-saver';
 import { useSelector } from 'react-redux'
 
 import { SCENE_NAMES } from '../constants'
@@ -28,6 +27,7 @@ import hotel5 from '../../components/assets/maps/friedshrimp/hotel/hotel5.jfif'
 import hotel6 from '../../components/assets/maps/friedshrimp/hotel/hotel6.jfif'
 
 import get from 'lodash/get'
+import DownloadOptions from '../../components/DownloadOptions'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,7 +35,8 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    paddingBottom: 300
   },
   galleryContainer: {
     display: 'flex',
@@ -86,6 +87,10 @@ const FriedshrimpPage = () => {
     }
   }
 
+  const mapDownloadOptions = [
+    { label: '1.14.4', value: 'http://download.koumifamily.com/index.php?share/file&user=100&sid=eGbHxnJI' },
+  ]
+
   return (
     <Page
       className={classes.root}
@@ -107,6 +112,11 @@ const FriedshrimpPage = () => {
             options={mapOptions}
           />
         </Grid>
+
+        <DownloadOptions
+          options={mapDownloadOptions}
+          type="map"
+        />
       </Grid>
 
     </Page>
