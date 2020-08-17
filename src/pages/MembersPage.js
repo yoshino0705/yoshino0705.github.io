@@ -15,9 +15,10 @@ import yoshinoIcon from '../components/assets/member_icons/yoshinobhl.jpg'
 import eveIcon from '../components/assets/member_icons/eve.jpg'
 import slgameIcon from '../components/assets/member_icons/slgame.jpg'
 import koumiIcon from '../components/assets/member_icons/koumi2.jpg'
-import lightDeIcon from '../components/assets/member_icons/lightDe.jpg'
+import lightDeIcon from '../components/assets/member_icons/lightDe2.png'
 import alexIcon from '../components/assets/member_icons/alex.jpg'
 import yoruIcon from '../components/assets/member_icons/yoru.jpg'
+import allenIcon from '../components/assets/member_icons/allen.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -104,7 +105,7 @@ const MembersPage = () => {
     {
       description: get(content, 'allen.description'),
       name: get(content, 'allen.name'),
-      icon: null,
+      icon: allenIcon,
       theme: 'rgba(170, 170, 252, 0.7)'
     },
     {
