@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/static/js/main.e8464e46.chunk.js",
-    "main.js.map": "/static/js/main.e8464e46.chunk.js.map",
+    "main.js": "/static/js/main.9966bd4e.chunk.js",
+    "main.js.map": "/static/js/main.9966bd4e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8016f912.js",
     "runtime-main.js.map": "/static/js/runtime-main.8016f912.js.map",
     "static/css/2.fb346933.chunk.css": "/static/css/2.fb346933.chunk.css",
-    "static/js/2.dd361396.chunk.js": "/static/js/2.dd361396.chunk.js",
-    "static/js/2.dd361396.chunk.js.map": "/static/js/2.dd361396.chunk.js.map",
+    "static/js/2.e02dc496.chunk.js": "/static/js/2.e02dc496.chunk.js",
+    "static/js/2.e02dc496.chunk.js.map": "/static/js/2.e02dc496.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0caf363bebea085b960fda09cd23833a.js": "/precache-manifest.0caf363bebea085b960fda09cd23833a.js",
+    "precache-manifest.16ab21c48614705bf9237d4b0f0300ef.js": "/precache-manifest.16ab21c48614705bf9237d4b0f0300ef.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.fb346933.chunk.css.map": "/static/css/2.fb346933.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.dd361396.chunk.js.LICENSE.txt": "/static/js/2.dd361396.chunk.js.LICENSE.txt",
+    "static/js/2.e02dc496.chunk.js.LICENSE.txt": "/static/js/2.e02dc496.chunk.js.LICENSE.txt",
     "static/media/alex.jpg": "/static/media/alex.bf723523.jpg",
+    "static/media/allen.png": "/static/media/allen.dba7a64f.png",
     "static/media/art0.jpg": "/static/media/art0.654565f8.jpg",
     "static/media/art1.jpg": "/static/media/art1.be4f9ee2.jpg",
     "static/media/art2.jpg": "/static/media/art2.8e1030c8.jpg",
@@ -50,7 +51,7 @@
     "static/media/hotel5.jfif": "/static/media/hotel5.815895b1.jfif",
     "static/media/hotel6.jfif": "/static/media/hotel6.4f9c2843.jfif",
     "static/media/koumi2.jpg": "/static/media/koumi2.f00fca65.jpg",
-    "static/media/lightDe.jpg": "/static/media/lightDe.ae1b986b.jpg",
+    "static/media/lightDe2.png": "/static/media/lightDe2.030d2cfc.png",
     "static/media/lobby.jfif": "/static/media/lobby.e0c8f603.jfif",
     "static/media/mushroom0.jfif": "/static/media/mushroom0.f1fd069c.jfif",
     "static/media/mushroom1.jfif": "/static/media/mushroom1.a372792a.jfif",
@@ -122,8 +123,8 @@
   "entrypoints": [
     "static/js/runtime-main.8016f912.js",
     "static/css/2.fb346933.chunk.css",
-    "static/js/2.dd361396.chunk.js",
+    "static/js/2.e02dc496.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.e8464e46.chunk.js"
+    "static/js/main.9966bd4e.chunk.js"
   ]
 }
