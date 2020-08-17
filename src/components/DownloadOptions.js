@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
       flexDirection: 'column'
     },
   },
+  text: {
+    fontFamily: '微軟正黑體'
+  }
 }));
 
 const DownloadOptions = (props) => {
@@ -62,6 +65,9 @@ const DownloadOptions = (props) => {
       </Grid>
       <Grid item>
         <Button
+          classes={{
+            label: classes.text
+          }}
           color="primary"
           disabled={disableButton}
           onClick={() => {

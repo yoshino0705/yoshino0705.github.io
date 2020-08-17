@@ -30,21 +30,25 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     color: '#fff',
-    margin: theme.spacing(0, 1)
+    margin: theme.spacing(0, 1),
+    fontFamily: '微軟正黑體'
   },
   selected: {
     color: '#FFDF00',
     fontWeight: 900
   },
   link: {
-    textDecoration: 'none'
+    textDecoration: 'none',
+    fontFamily: '微軟正黑體'
   },
   button: {
-    width: '100%'
+    width: '100%',
+    fontFamily: '微軟正黑體'
   },
   option: {
     display: 'flex',
     alignItems: 'center',
+    fontFamily: '微軟正黑體'
   }
 }));
 

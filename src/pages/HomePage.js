@@ -18,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: theme.spacing(3)
+    padding: theme.spacing(3),
+    fontFamily: '微軟正黑體'
   },
   container: {
     padding: theme.spacing(3)
@@ -50,18 +51,23 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       fontSize: 54
     },
+    fontFamily: '微軟正黑體'
   },
   text: {
-    color: '#A63F00'
+    color: '#A63F00',
+    fontFamily: '微軟正黑體'
   },
   intro: {
-    fontSize: 20
+    fontSize: 20,
+    fontFamily: '微軟正黑體'
   },
   subText: {
-    fontSize: 16
+    fontSize: 16,
+    fontFamily: '微軟正黑體'
   },
   werewolf: {
-    fontSize: 34
+    fontSize: 34,
+    fontFamily: '微軟正黑體'
   }
 }));
 

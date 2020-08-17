@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
       justifyContent: 'center',
       alignItems: 'center',
     },
+    fontFamily: '微軟正黑體'
   },
   container: {
     padding: theme.spacing(3)
@@ -43,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       fontSize: 20
     },
+    fontFamily: '微軟正黑體'
   },
   description: {
     fontSize: 20,
@@ -50,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       fontSize: 16
     },
+    fontFamily: '微軟正黑體'
   },
   card: {
     [theme.breakpoints.up('md')]: {

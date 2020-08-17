@@ -38,7 +38,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
-    paddingBottom: 300
+    paddingBottom: 300,
+    fontFamily: '微軟正黑體'
   },
   galleryContainer: {
     display: 'flex',

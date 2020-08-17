@@ -14,7 +14,8 @@ import { makeStyles } from '@material-ui/core/styles'
 const useStyles = makeStyles((theme) => ({
   root: {
     background: 'transparent',
-    boxShadow: 'none'
+    boxShadow: 'none',
+    fontFamily: '微軟正黑體'
   },
 }));
 

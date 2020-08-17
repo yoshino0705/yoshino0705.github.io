@@ -14,17 +14,20 @@ const useStyles = makeStyles((theme) => ({
     '& .MuiTextField-root': {
       margin: theme.spacing(1),
       minWidth: '25ch',
+      fontFamily: '微軟正黑體'
     },
     '& .MuiFormLabel-root': {
       color: 'black',
-      fontWeight: 500
+      fontWeight: 500,
+      fontFamily: '微軟正黑體'
     },
     '& .MuiFilledInput-root': {
       background: 'orange',
       color: 'black',
       borderRadius: 12,
       border: 'solid crimson',
-      fontWeight: 900
+      fontWeight: 900,
+      fontFamily: '微軟正黑體'
     },
     '& .MuiFilledInput-underline:before': {
       border: 'none'

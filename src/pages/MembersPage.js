@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     padding: theme.spacing(3),
+    fontFamily: '微軟正黑體'
   },
   container: {
     padding: theme.spacing(3),

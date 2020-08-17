@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const LANGUAGES = {
   'zh-TW': '中文',
   'en-US': 'English'

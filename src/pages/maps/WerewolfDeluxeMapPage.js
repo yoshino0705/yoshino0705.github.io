@@ -110,7 +110,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       fontSize: 24
     },
-    padding: theme.spacing(0, 2, 1, 2)
+    padding: theme.spacing(0, 2, 1, 2),
+    fontFamily: '微軟正黑體'
   },
 
 }));

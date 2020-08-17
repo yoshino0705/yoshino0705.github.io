@@ -17,6 +17,7 @@ import includes from 'lodash/includes'
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: 'transparent',
+    fontFamily: '微軟正黑體 !important'
   },
   icon: {
     height: 20,
@@ -24,11 +25,12 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     color: '#fff',
-    margin: theme.spacing(0, 1)
+    margin: theme.spacing(0, 1),
+    fontFamily: '微軟正黑體 !important'
   },
   selected: {
     color: '#FFDF00',
-    fontWeight: 900
+    fontWeight: 900,
   },
   option: {
     display: 'flex',
@@ -68,6 +70,9 @@ const IconButton = (props) => {
             classes.text,
             { [classes.selected]: !disableHightlight && includes(toLower(pathname), path) })}
           primary={label}
+          primaryTypographyProps={{
+            style: { fontFamily: '微軟正黑體' }
+          }}
         />
       </ListItem>
 

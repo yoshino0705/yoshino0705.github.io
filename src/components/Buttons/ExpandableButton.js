@@ -30,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     color: '#fff',
-    margin: theme.spacing(0, 1)
+    margin: theme.spacing(0, 1),
+    fontFamily: '微軟正黑體 !important'
   },
   selected: {
     color: '#FFDF00',
@@ -90,6 +91,9 @@ const ExpandableButton = (props) => {
           <ListItemText
             className={classes.text}
             primary={label}
+            primaryTypographyProps={{
+              style: { fontFamily: '微軟正黑體' }
+            }}
           />
           {open ? <ExpandLess className={classes.svg} /> : <ExpandMore className={classes.svg} />}
         </ListItem>
@@ -127,6 +131,9 @@ const ExpandableButton = (props) => {
                             classes.text,
                             { [classes.selected]: includes(toLower(pathname), o.path) })}
                           primary={o.label}
+                          primaryTypographyProps={{
+                            style: { fontFamily: '微軟正黑體' }
+                          }}
                         />
                       </ListItem>
                     </Link>
@@ -149,6 +156,9 @@ const ExpandableButton = (props) => {
                           classes.text,
                           { [classes.selected]: includes(toLower(pathname), o.path) })}
                         primary={o.label}
+                        primaryTypographyProps={{
+                          style: { fontFamily: '微軟正黑體' }
+                        }}
                       />
                     </ListItem>
                 )
