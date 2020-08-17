@@ -3,7 +3,9 @@ import { makeStyles } from '@material-ui/core/styles'
 import { useSelector } from 'react-redux'
 
 import { SCENE_NAMES } from '../constants'
+import { MAP_NAMES } from '../../components/constants'
 import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
 
 import Gallery from '../../components/Gallery'
 import Page from '../../components/Page'
@@ -92,6 +94,24 @@ const useStyles = makeStyles((theme) => ({
     width: '90%',
     marginTop: theme.spacing(3)
   },
+  titleContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(128, 128, 128, 0.7)',
+    borderBottomLeftRadius: 30,
+    borderBottomRightRadius: 30,
+    padding: theme.spacing(1)
+  },
+  title: {
+    fontWeight: 800,
+    color: '#FFDF00',
+    fontSize: 72,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 24
+    },
+    padding: theme.spacing(0, 2, 1, 2)
+  },
 
 }));
 
@@ -168,6 +188,14 @@ const WerewolfDeluxeMapPage = () => {
       className={classes.root}
       title="werewolf-dlx"
     >
+      <div className={classes.titleContainer}>
+        <Typography
+          className={classes.title}
+          variant="h1"
+        >
+          {get(MAP_NAMES[language.locale], 'werewolf_dlx')}
+        </Typography>
+      </div>
       <div className={classes.galleryContainer}>
         <Gallery
           images={images}

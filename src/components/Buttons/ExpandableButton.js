@@ -67,19 +67,19 @@ const ExpandableButton = (props) => {
   const { pathname } = useLocation()
   const [open, setOpen] = useState(false)
 
-  const handleToggle = () => setOpen(!open)
-
   return (
     <ClickAwayListener onClickAway={() => setOpen(false)}>
       <List
         component="div"
         className={classes.root}
         disablePadding
+        onMouseEnter={() => { setOpen(true) }}
+        onMouseLeave={() => { setOpen(false) }}
       >
         <ListItem
           button
           className={classes.svg}
-          onClick={handleToggle}
+          onClick={() => { setOpen(true) }}
         >
           {parentIcon ? parentIcon :
             <img

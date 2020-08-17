@@ -16,6 +16,10 @@ import { makeStyles } from '@material-ui/core/styles'
 const useStyles = makeStyles((theme) => ({
   root: {
     marginTop: theme.spacing(5),
+    flexDirection: 'row',
+    [theme.breakpoints.down('sm')]: {
+      flexDirection: 'column'
+    },
   },
 }));
 
@@ -47,7 +51,6 @@ const DownloadOptions = (props) => {
       alignItems="center"
       className={classes.root}
       container
-      direction="row"
       justify="center"
     >
       <Grid item>
