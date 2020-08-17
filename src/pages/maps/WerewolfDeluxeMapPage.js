@@ -158,7 +158,7 @@ const WerewolfDeluxeMapPage = () => {
   ]
 
   const datapackDownloadOptions = [
-    { label: '1.16.1', value: 'http://download.koumifamily.com/index.php?share/file&user=100&sid=64UhcBzK' },
+    { label: '1.16.1', value: 'http://download.koumifamily.com/index.php?share/file&user=100&sid=5zNajigI' },
     { label: '1.15.2', value: 'http://download.koumifamily.com/index.php?share/file&user=100&sid=pDIaRwNb' },
     { label: '1.14.4', value: 'http://download.koumifamily.com/index.php?share/file&user=100&sid=C4winWrR' },
   ]
