@@ -173,15 +173,15 @@ const WerewolfDeluxeMapPage = () => {
   }
 
   const mapDownloadOptions = [
-    { label: '1.16.1', value: 'http://download.koumifamily.com/index.php?share/file&user=100&sid=kNSsV4tT' },
-    { label: '1.15.2', value: 'http://download.koumifamily.com/index.php?share/file&user=100&sid=5UidN6aT' },
-    { label: '1.14.4', value: 'http://download.koumifamily.com/index.php?share/file&user=100&sid=aNZXGS6Q' }
+    { label: '1.16.1', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=kNSsV4tT' },
+    { label: '1.15.2', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=5UidN6aT' },
+    { label: '1.14.4', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=aNZXGS6Q' }
   ]
 
   const datapackDownloadOptions = [
-    { label: '1.16.1', value: 'http://download.koumifamily.com/index.php?share/file&user=100&sid=2vcu8eSW' },
-    { label: '1.15.2', value: 'http://download.koumifamily.com/index.php?share/file&user=100&sid=79EWdt36' },
-    { label: '1.14.4', value: 'http://download.koumifamily.com/index.php?share/file&user=100&sid=nGyUCwxt' },
+    { label: '1.16.1', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=2vcu8eSW' },
+    { label: '1.15.2', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=79EWdt36' },
+    { label: '1.14.4', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=nGyUCwxt' },
   ]
 
   return (
