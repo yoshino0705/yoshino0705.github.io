@@ -11,6 +11,8 @@ import Gallery from '../../components/Gallery'
 import Page from '../../components/Page'
 import Dropdown from '../../components/Dropdown'
 
+import TabBoard from '../../components/Tabs/TabBoard'
+
 import snow0 from '../../components/assets/maps/werewolf_dlx/snow/snow0.jpg'
 import snow1 from '../../components/assets/maps/werewolf_dlx/snow/snow1.jpg'
 import snow2 from '../../components/assets/maps/werewolf_dlx/snow/snow2.jpg'
@@ -173,12 +175,14 @@ const WerewolfDeluxeMapPage = () => {
   }
 
   const mapDownloadOptions = [
+    { label: '1.16.2', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=4hgXvIJw' },
     { label: '1.16.1', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=kNSsV4tT' },
     { label: '1.15.2', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=5UidN6aT' },
     { label: '1.14.4', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=aNZXGS6Q' }
   ]
 
   const datapackDownloadOptions = [
+    { label: '1.16.2', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=cSfYExj5' },
     { label: '1.16.1', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=2vcu8eSW' },
     { label: '1.15.2', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=79EWdt36' },
     { label: '1.14.4', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=nGyUCwxt' },
@@ -223,6 +227,16 @@ const WerewolfDeluxeMapPage = () => {
           options={datapackDownloadOptions}
           type="datapack"
         />
+        <Grid item>
+          <TabBoard
+            tabs={[
+              { title: 'test', content: 'test1' },
+              { title: 'test2', content: 'test2' },
+              { title: 'test3', content: 'test3' },
+              { title: 'test4', content: 'test4' }
+            ]}
+          />
+        </Grid>
       </Grid>
 
     </Page>
