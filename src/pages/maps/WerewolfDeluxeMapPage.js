@@ -115,6 +115,9 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(0, 2, 1, 2),
     fontFamily: '微軟正黑體'
   },
+  content: {
+    minHeight: 700
+  }
 
 }));
 
@@ -208,9 +211,10 @@ const WerewolfDeluxeMapPage = () => {
       </div>
       <Grid
         alignItems="center"
+        className={classes.content}
         container
         direction="column"
-        justify="center"
+        justify="space-evenly"
       >
         <Grid item>
           <Dropdown

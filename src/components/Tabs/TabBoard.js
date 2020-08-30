@@ -16,9 +16,9 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'center',
-    padding: theme.spacing(3),
-    fontFamily: '微軟正黑體'
+    padding: theme.spacing(0, 2),
+    fontFamily: '微軟正黑體',
+    backgroundColor: 'rgba(223, 169, 169, 0.70)',
   },
   container: {
     padding: theme.spacing(3)

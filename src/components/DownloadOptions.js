@@ -15,7 +15,6 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginTop: theme.spacing(5),
     flexDirection: 'column',
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column'
