@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#FF1F0F',
     fontSize: 72,
     [theme.breakpoints.down('sm')]: {
-      fontSize: 54
+      fontSize: 60
     },
     fontFamily: '微軟正黑體'
   },
