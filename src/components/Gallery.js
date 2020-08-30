@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import PropTypes from 'prop-types'
+import withWidth, { isWidthDown } from '@material-ui/core/withWidth'
 
 import Grid from '@material-ui/core/Grid'
 import map from 'lodash/map'
@@ -24,7 +25,8 @@ const useStyles = makeStyles((theme) => ({
 
 const Gallery = (props) => {
   const {
-    images
+    images,
+    width: propsWidth
   } = props
 
   const classes = useStyles()
@@ -35,6 +37,7 @@ const Gallery = (props) => {
   }, [images])
 
   if (isEmpty(images)) return <div />
+  const isMobile = isWidthDown('sm', propsWidth)
 
   return (
     <Grid
@@ -46,6 +49,7 @@ const Gallery = (props) => {
         infiniteLoop
         showStatus={false}
         showThumbs={false}
+        showIndicators={!isMobile}
         useKeyboardArrows
         swipeable
         emulateTouch
@@ -77,4 +81,4 @@ Gallery.propTypes = {
   images: PropTypes.array
 }
 
-export default Gallery
+export default withWidth()(Gallery)
