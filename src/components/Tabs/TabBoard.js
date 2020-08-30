@@ -19,33 +19,22 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(0, 2),
     fontFamily: '微軟正黑體',
     backgroundColor: 'rgba(223, 169, 169, 0.70)',
+    borderRadius: 12,
+    maxWidth: 600,
+    fontSize: 30,
+    [theme.breakpoints.down('sm')]: {
+      width: 260,
+      fontSize: 26
+    },
+
   },
   container: {
     padding: theme.spacing(3)
   },
-  card: {
-    [theme.breakpoints.up('md')]: {
-      width: 600
-    },
-    [theme.breakpoints.down('sm')]: {
-      width: 300
-    },
-    backgroundColor: 'rgba(223, 169, 169, 0.70)',
-    borderRadius: 12,
-  },
-  family: {
-    fontWeight: 800,
-    color: '#FF1F0F',
-    fontSize: 72,
-    [theme.breakpoints.down('sm')]: {
-      fontSize: 54
-    },
-    fontFamily: '微軟正黑體'
-  },
-  text: {
-    color: '#A63F00',
-    fontFamily: '微軟正黑體'
-  },
+  selectedOption: {
+    fontWeight: 900,
+
+  }
 }));
 
 const TabBoard = (props) => {
@@ -59,14 +48,13 @@ const TabBoard = (props) => {
     return {
       id: `scrollable-auto-tab-${index}`,
       'aria-controls': `scrollable-auto-tabpanel-${index}`,
+      key: index
     };
   }
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
-  // tabs is an object {title: ..., content: <div>stuff to display</div>}
 
   return (
     <div className={classes.root}>
@@ -75,17 +63,28 @@ const TabBoard = (props) => {
         onChange={handleChange}
         indicatorColor="primary"
         textColor="primary"
-        variant="scrollable"
+        // variant="scrollable"
         scrollButtons="auto"
-        aria-label="scrollable auto tabs example"
+        centered
       >
         {
-          map(tabs, (t, i) => <Tab label={t.title} {...a11yProps(i)} />)
+          map(tabs, (t, i) =>
+            <Tab
+              classes={{
+                selected: classes.selectedOption
+              }}
+              label={t.title}
+              {...a11yProps(i)}
+            />)
         }
       </Tabs>
       {
         map(tabs, (t, i) =>
-          <TabPanel value={value} index={i}>
+          <TabPanel
+            key={i}
+            index={i}
+            value={value}
+          >
             {t.content}
           </TabPanel>
         )

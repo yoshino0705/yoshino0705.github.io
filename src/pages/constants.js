@@ -164,3 +164,27 @@ export const SCENE_NAMES = {
   'zh-TW': SCENE_ZH_TW,
   'en-US': SCENE_EN_US
 }
+
+// Page Contents
+
+const WDLX_ZH_TW = {
+  intro: '本地圖為我們團隊最初作品 "人狼殺" 的續作。在保留原始PvP元素的同時，也新增傳統的投票系統，並延伸出許多我們原創的角色能力與變異玩法，融合了Minecraft與狼人殺的樂趣',
+  riot_title: '暴民式狼人殺',
+  debate_title: '辯論式狼人殺',
+  riot_content: '遊戲開始時直接進入白天。白天時所有人會獲得一把武器，拿它砍向你所懷疑之人。晚上時每個玩家都會獲得各自職業的專屬技能，用來殺人或保命',
+  debate_content: '遊戲開始時直接進入晚上。遊戲方式主要為投票，白天玩家可進行辯論、猜測與投票，晚上為使用各自技能的時間。',
+}
+
+const WDLX_EN_US = {
+  intro: 'This Multiplayer Map is the sequel to our very first creation "The Werewolf Game (Mafia)". While inheriting the PvP aspects, we also added the traditional voting system into the game, and created our own original roles and playstyles, integrating the fun elements of two games.',
+  riot_title: 'Riot Mode',
+  debate_title: 'Debate Mode',
+  riot_content: 'Game starts in day. During the day, players will each receive a one-durability weapon, use that to hit any player you find suspicious. During the night, time players will receive their respective abilities, use them to kill or protect yourselves.',
+  debate_content: 'Game starts in night. A majority of interactions are voting via written books. During the day, players can debate who is the killer and defend themselves. During the night, players can make use of their abilities to figure out who to trust.',
+}
+
+export const WEREWOLF_DLX_PAGE_CONTENTS = {
+  'zh-TW': WDLX_ZH_TW,
+  'en-US': WDLX_EN_US
+}
+

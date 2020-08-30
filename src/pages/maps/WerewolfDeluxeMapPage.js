@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { useSelector } from 'react-redux'
 
-import { SCENE_NAMES } from '../constants'
-import { MAP_NAMES } from '../../components/constants'
+import { SCENE_NAMES, WEREWOLF_DLX_PAGE_CONTENTS } from '../constants'
+import { MAP_NAMES, CONTENT_TITLES, DL_TEXTS } from '../../components/constants'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
+import Card from '@material-ui/core/Card'
+import CardContent from '@material-ui/core/CardContent'
 
 import Gallery from '../../components/Gallery'
 import Page from '../../components/Page'
@@ -100,9 +102,8 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(128, 128, 128, 0.7)',
-    borderBottomLeftRadius: 30,
-    borderBottomRightRadius: 30,
+    backgroundColor: 'rgba(128, 128, 128, 0.9)',
+    borderRadius: 30,
     padding: theme.spacing(1)
   },
   title: {
@@ -112,11 +113,56 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       fontSize: 24
     },
-    padding: theme.spacing(0, 2, 1, 2),
+    padding: theme.spacing(0, 3),
+    fontFamily: '微軟正黑體'
+  },
+  subtitleContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(128, 128, 128, 0.7)',
+    borderRadius: 30,
+    padding: theme.spacing(1)
+  },
+  subtitle: {
+    fontWeight: 800,
+    color: '#FFDF00',
+    fontSize: 24,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 14
+    },
+    padding: theme.spacing(0, 2, 0, 2),
     fontFamily: '微軟正黑體'
   },
   content: {
-    minHeight: 700
+    minHeight: 1200,
+    [theme.breakpoints.down('sm')]: {
+      minHeight: 1500,
+    },
+  },
+
+  card: {
+    [theme.breakpoints.up('md')]: {
+      width: 600
+    },
+    [theme.breakpoints.down('sm')]: {
+      width: 250
+    },
+    backgroundColor: 'rgba(223, 169, 169, 0.70)',
+    borderRadius: 12,
+    padding: theme.spacing(3),
+    marginTop: theme.spacing(1)
+  },
+  text: {
+    fontFamily: '微軟正黑體',
+    fontSize: 24,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 18
+    },
+  },
+
+  marginTop: {
+    marginTop: theme.spacing(1)
   }
 
 }));
@@ -142,6 +188,8 @@ const WerewolfDeluxeMapPage = () => {
 
   const language = useSelector(state => state.language)
   const content = get(SCENE_NAMES[language.locale], 'werewolf_dlx')
+  const contentTitles = get(CONTENT_TITLES, language.locale)
+  const pageContents = get(WEREWOLF_DLX_PAGE_CONTENTS, language.locale)
 
   const mapOptions = [
     { label: get(content, 'snow'), value: 'snow' },
@@ -216,31 +264,104 @@ const WerewolfDeluxeMapPage = () => {
         direction="column"
         justify="space-evenly"
       >
-        <Grid item>
-          <Dropdown
-            getSelectedOption={getSelectedMap}
-            label={get(content, 'preview')}
-            options={mapOptions}
+
+        <div>
+          <Grid item className={classes.subtitleContainer}>
+            <Typography
+              className={classes.subtitle}
+              variant="h1"
+            >
+              {get(content, 'preview')}
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Dropdown
+              getSelectedOption={getSelectedMap}
+              label={get(content, 'preview')}
+              options={mapOptions}
+            />
+          </Grid>
+        </div>
+
+
+        <div>
+          <Grid item className={classes.subtitleContainer}>
+            <Typography
+              className={classes.subtitle}
+              variant="h1"
+            >
+              {get(DL_TEXTS[language.locale], 'download_map')}
+            </Typography>
+          </Grid>
+          <DownloadOptions
+            options={mapDownloadOptions}
+            type="map"
           />
-        </Grid>
-        <DownloadOptions
-          options={mapDownloadOptions}
-          type="map"
-        />
-        <DownloadOptions
-          options={datapackDownloadOptions}
-          type="datapack"
-        />
-        <Grid item>
-          <TabBoard
-            tabs={[
-              { title: 'test', content: 'test1' },
-              { title: 'test2', content: 'test2' },
-              { title: 'test3', content: 'test3' },
-              { title: 'test4', content: 'test4' }
-            ]}
+        </div>
+
+
+        <div>
+          <Grid item className={classes.subtitleContainer}>
+            <Typography
+              className={classes.subtitle}
+              variant="h1"
+            >
+              {get(DL_TEXTS[language.locale], 'download_datapack')}
+            </Typography>
+          </Grid>
+          <DownloadOptions
+            options={datapackDownloadOptions}
+            type="datapack"
           />
-        </Grid>
+        </div>
+
+        <div>
+          <Grid item className={classes.subtitleContainer}>
+            <Typography
+              className={classes.subtitle}
+              variant="h1"
+            >
+              {get(contentTitles, 'intro')}
+            </Typography>
+          </Grid>
+
+          <Card
+            className={classes.card}
+          >
+            <CardContent>
+              <Typography
+                className={classes.text}
+                variant="h4"
+              >
+                {get(pageContents, 'intro')}
+              </Typography>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div>
+          <Grid item className={classes.subtitleContainer}>
+            <Typography
+              className={classes.subtitle}
+              variant="h1"
+            >
+              {get(contentTitles, 'modes')}
+            </Typography>
+          </Grid>
+
+          <Grid
+            className={classes.marginTop}
+            item
+          >
+            <TabBoard
+              tabs={[
+                { title: get(pageContents, 'riot_title'), content: get(pageContents, 'riot_content') },
+                { title: get(pageContents, 'debate_title'), content: get(pageContents, 'debate_content') },
+              ]}
+            />
+          </Grid>
+        </div>
+
       </Grid>
 
     </Page>

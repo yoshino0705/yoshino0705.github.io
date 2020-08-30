@@ -67,10 +67,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'rgba(128, 128, 128, 0.7)',
-    borderBottomLeftRadius: 30,
-    borderBottomRightRadius: 30,
-    padding: theme.spacing(1),
-    fontFamily: '微軟正黑體'
+    borderRadius: 30,
+    padding: theme.spacing(1)
   },
   title: {
     fontWeight: 800,
@@ -79,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       fontSize: 24
     },
-    padding: theme.spacing(0, 2, 1, 2),
+    padding: theme.spacing(0, 3),
     fontFamily: '微軟正黑體'
   },
 

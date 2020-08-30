@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
       width: 600
     },
     [theme.breakpoints.down('sm')]: {
-      width: 300
+      width: 250
     },
     backgroundColor: 'rgba(223, 169, 169, 0.70)',
     borderRadius: 12,
@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
       width: 600
     },
     [theme.breakpoints.down('sm')]: {
-      width: 300
+      width: 250
     },
     backgroundColor: 'rgba(255, 151, 15, 0.91)',
     borderRadius: 12,

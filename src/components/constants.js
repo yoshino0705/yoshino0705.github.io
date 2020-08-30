@@ -75,3 +75,22 @@ export const DL_TEXTS = {
   'zh-TW': DL_ZH_TW,
   'en-US': DL_EN_US
 }
+
+const CONTENT_TITLES_ZH_TW = {
+  roles: '角色介紹',
+  contents: '遊戲內容',
+  intro: '遊戲簡介',
+  modes: '遊戲模式',
+}
+
+const CONTENT_TITLES_EN_US = {
+  roles: 'Roles',
+  contents: 'About',
+  intro: 'Intro',
+  modes: 'Modes'
+}
+
+export const CONTENT_TITLES = {
+  'zh-TW': CONTENT_TITLES_ZH_TW,
+  'en-US': CONTENT_TITLES_EN_US
+}
