@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import { useSelector } from 'react-redux'
 
 import { SCENE_NAMES } from '../constants'
-import { MAP_NAMES } from '../../components/constants'
+import { MAP_NAMES, DL_TEXTS } from '../../components/constants'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 
@@ -53,7 +53,9 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     backgroundColor: 'rgba(128, 128, 128, 0.7)',
     borderRadius: 30,
-    padding: theme.spacing(1)
+    padding: theme.spacing(1),
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
   },
   title: {
     fontWeight: 800,
@@ -63,6 +65,26 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 24
     },
     padding: theme.spacing(0, 3),
+    fontFamily: '微軟正黑體'
+  },
+
+  subtitleContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(128, 128, 128, 0.7)',
+    borderRadius: 30,
+    padding: theme.spacing(1),
+    marginTop: theme.spacing(5)
+  },
+  subtitle: {
+    fontWeight: 800,
+    color: '#FFDF00',
+    fontSize: 24,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 14
+    },
+    padding: theme.spacing(0, 2, 0, 2),
     fontFamily: '微軟正黑體'
   },
 
@@ -131,21 +153,44 @@ const FriedshrimpPage = () => {
         />
       </div>
       <Grid
+        alignItems="center"
         container
+        direction="column"
         justify="center"
       >
-        <Grid item>
-          <Dropdown
-            getSelectedOption={getSelectedMap}
-            label={get(content, 'preview')}
-            options={mapOptions}
-          />
-        </Grid>
+        <div>
+          <Grid item className={classes.subtitleContainer}>
+            <Typography
+              className={classes.subtitle}
+              variant="h1"
+            >
+              {get(content, 'preview')}
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Dropdown
+              getSelectedOption={getSelectedMap}
+              label={get(content, 'preview')}
+              options={mapOptions}
+            />
+          </Grid>
+        </div>
 
-        <DownloadOptions
-          options={mapDownloadOptions}
-          type="map"
-        />
+
+        <div>
+          <Grid item className={classes.subtitleContainer}>
+            <Typography
+              className={classes.subtitle}
+              variant="h1"
+            >
+              {get(DL_TEXTS[language.locale], 'download_map')}
+            </Typography>
+          </Grid>
+          <DownloadOptions
+            options={mapDownloadOptions}
+            type="map"
+          />
+        </div>
       </Grid>
 
     </Page>

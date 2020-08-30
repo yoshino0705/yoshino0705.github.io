@@ -104,7 +104,9 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     backgroundColor: 'rgba(128, 128, 128, 0.9)',
     borderRadius: 30,
-    padding: theme.spacing(1)
+    padding: theme.spacing(1),
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
   },
   title: {
     fontWeight: 800,
@@ -122,7 +124,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     backgroundColor: 'rgba(128, 128, 128, 0.7)',
     borderRadius: 30,
-    padding: theme.spacing(1)
+    padding: theme.spacing(1),
+    marginTop: theme.spacing(5)
   },
   subtitle: {
     fontWeight: 800,
@@ -259,10 +262,9 @@ const WerewolfDeluxeMapPage = () => {
       </div>
       <Grid
         alignItems="center"
-        className={classes.content}
         container
         direction="column"
-        justify="space-evenly"
+        justify="center"
       >
 
         <div>
