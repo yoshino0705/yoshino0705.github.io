@@ -8,6 +8,7 @@ import MembersPage from '../pages/MembersPage'
 import WerewolfDeluxeMapPage from '../pages/maps/WerewolfDeluxeMapPage'
 import WerewolfOGPage from '../pages/maps/WerewolfOGPage'
 import FriedshrimpPage from '../pages/maps/FriedshrimpPage'
+import PlanetaryThievesPage from '../pages/maps/PlanetaryThievesPage'
 
 const Content = () => {
 
@@ -20,6 +21,7 @@ const Content = () => {
       <Route path="/werewolf-og" component={() => <WerewolfOGPage />} />
       <Route path="/friedshrimp" component={() => <FriedshrimpPage />} />
       <Route path="/werewolf-dlx" component={() => <WerewolfDeluxeMapPage />} />
+      <Route path="/planetary-thieves" component={() => <PlanetaryThievesPage />} />
     </Switch >
 
   )

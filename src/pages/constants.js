@@ -130,6 +130,11 @@ const SCENE_ZH_TW = {
     vacation: '渡假村',
     space: '銀河邊境',
     lobby: '遊戲大廳'
+  },
+  planetary_thieves: {
+    preview: '地圖預覽',
+    space: '宇宙開拓世界',
+    zeta: '澤塔星ζ'
   }
 }
 
@@ -157,6 +162,11 @@ const SCENE_EN_US = {
     vacation: 'Resort',
     space: 'Galaxy Boundary',
     lobby: 'Lobby'
+  },
+  planetary_thieves: {
+    preview: 'Landscapes Preview',
+    space: 'Space',
+    zeta: 'Planet Zeta'
   }
 }
 
