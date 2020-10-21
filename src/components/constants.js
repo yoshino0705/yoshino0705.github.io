@@ -89,13 +89,15 @@ const CONTENT_TITLES_ZH_TW = {
   contents: '遊戲內容',
   intro: '遊戲簡介',
   modes: '遊戲模式',
+  install: '安裝教學'
 }
 
 const CONTENT_TITLES_EN_US = {
   roles: 'Roles',
   contents: 'About',
   intro: 'Intro',
-  modes: 'Modes'
+  modes: 'Modes',
+  install: 'Installation'
 }
 
 export const CONTENT_TITLES = {

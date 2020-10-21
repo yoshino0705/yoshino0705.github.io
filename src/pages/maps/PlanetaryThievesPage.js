@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { useSelector } from 'react-redux'
 
-import { SCENE_NAMES, WEREWOLF_DLX_PAGE_CONTENTS } from '../constants'
+import { SCENE_NAMES, PLANETARY_THIEVES_CONTENTS } from '../constants'
 import { MAP_NAMES, DL_TEXTS, CONTENT_TITLES } from '../../components/constants'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
@@ -144,12 +144,12 @@ const PlanetaryThievesPage = () => {
   ]
 
   const contentTitles = get(CONTENT_TITLES, language.locale)
-  const pageContents = get(WEREWOLF_DLX_PAGE_CONTENTS, language.locale)
+  const pageContents = get(PLANETARY_THIEVES_CONTENTS, language.locale)
 
   return (
     <Page
       className={classes.root}
-      title="planetary_thieves"
+      title="planetary-thieves"
     >
       <div className={classes.titleContainer}>
         <Typography
@@ -222,7 +222,7 @@ const PlanetaryThievesPage = () => {
           />
         </div>
 
-        {/* <div>
+        <div>
           <Grid item className={classes.subtitleContainer}>
             <Typography
               className={classes.subtitle}
@@ -244,7 +244,7 @@ const PlanetaryThievesPage = () => {
               </Typography>
             </CardContent>
           </Card>
-        </div> */}
+        </div>
       </Grid>
 
     </Page>

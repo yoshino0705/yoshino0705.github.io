@@ -198,3 +198,11 @@ export const WEREWOLF_DLX_PAGE_CONTENTS = {
   'en-US': WDLX_EN_US
 }
 
+export const PLANETARY_THIEVES_CONTENTS = {
+  'zh-TW': {
+    intro: '本地圖為多人找按鈕(Find The Button)兼PvP，可無限次重複遊玩。除了按鈕外，還有各式的武器道具，例如雷射槍、按鈕追蹤器、地雷、手榴彈等...。隨著遊戲更新，武器道具種類也會變多，遊玩場地亦此。玩家必須找出敵隊的真實按鈕並成功破壞(使按鈕生命值歸零)才能取勝。'
+  },
+  'en-US': {
+    intro: 'This is a Find The Button, PvP multiplayer map, and can be played repeatedly. Aside from button interactions, there are many weapons and items to play with, such as Laser Gun, Button Tracker, Landmine, Grenade, etc... These items will increase as new updates roll out. Players have to find and destroy the enemies buttons (by taking Button Life down to 0) to win.'
+  }
+}
