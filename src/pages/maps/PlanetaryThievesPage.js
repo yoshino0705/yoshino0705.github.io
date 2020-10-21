@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { useSelector } from 'react-redux'
 
-import { SCENE_NAMES } from '../constants'
-import { MAP_NAMES, DL_TEXTS } from '../../components/constants'
+import { SCENE_NAMES, WEREWOLF_DLX_PAGE_CONTENTS } from '../constants'
+import { MAP_NAMES, DL_TEXTS, CONTENT_TITLES } from '../../components/constants'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
+import Card from '@material-ui/core/Card'
+import CardContent from '@material-ui/core/CardContent'
 
 import Gallery from '../../components/Gallery'
 import Page from '../../components/Page'
@@ -76,7 +78,26 @@ const useStyles = makeStyles((theme) => ({
   center: {
     display: 'flex',
     justifyContent: 'center'
-  }
+  },
+  text: {
+    fontFamily: '微軟正黑體',
+    fontSize: 24,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 18
+    },
+  },
+  card: {
+    [theme.breakpoints.up('md')]: {
+      width: 600
+    },
+    [theme.breakpoints.down('sm')]: {
+      width: 250
+    },
+    backgroundColor: 'rgba(223, 169, 169, 0.70)',
+    borderRadius: 12,
+    padding: theme.spacing(3),
+    marginTop: theme.spacing(1)
+  },
 }));
 
 
@@ -115,8 +136,15 @@ const PlanetaryThievesPage = () => {
   }
 
   const mapDownloadOptions = [
-    { label: '1.16.3', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=tz5cyuDY' },
+    { label: '1.16.3', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=RCmGxHKY' },
   ]
+
+  const texturepackDownloadOptions = [
+    { label: '1.16.3', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=AkvSKtmR' },
+  ]
+
+  const contentTitles = get(CONTENT_TITLES, language.locale)
+  const pageContents = get(WEREWOLF_DLX_PAGE_CONTENTS, language.locale)
 
   return (
     <Page
@@ -170,7 +198,7 @@ const PlanetaryThievesPage = () => {
               className={classes.subtitle}
               variant="h1"
             >
-              {get(DL_TEXTS[language.locale], 'download_map')}
+              {get(DL_TEXTS[language.locale], 'download_map_unzip')}
             </Typography>
           </Grid>
           <DownloadOptions
@@ -178,6 +206,45 @@ const PlanetaryThievesPage = () => {
             type="map"
           />
         </div>
+
+        <div>
+          <Grid item className={classes.subtitleContainer}>
+            <Typography
+              className={classes.subtitle}
+              variant="h1"
+            >
+              {get(DL_TEXTS[language.locale], 'download_texture')}
+            </Typography>
+          </Grid>
+          <DownloadOptions
+            options={texturepackDownloadOptions}
+            type="map"
+          />
+        </div>
+
+        {/* <div>
+          <Grid item className={classes.subtitleContainer}>
+            <Typography
+              className={classes.subtitle}
+              variant="h1"
+            >
+              {get(contentTitles, 'intro')}
+            </Typography>
+          </Grid>
+
+          <Card
+            className={classes.card}
+          >
+            <CardContent>
+              <Typography
+                className={classes.text}
+                variant="h4"
+              >
+                {get(pageContents, 'intro')}
+              </Typography>
+            </CardContent>
+          </Card>
+        </div> */}
       </Grid>
 
     </Page>

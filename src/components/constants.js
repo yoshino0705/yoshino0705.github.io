@@ -65,14 +65,18 @@ const DL_ZH_TW = {
   download_for: '選擇麥塊版本',
   download_map: '下載地圖',
   download_datapack: '下載資料包',
-  download: '下載'
+  download: '下載',
+  download_map_unzip: '下載地圖 (解壓縮至此)',
+  download_texture: '下載材質包 (不需解壓縮)'
 }
 
 const DL_EN_US = {
   download_for: 'Select Minecraft Version',
   download_map: 'Download Map',
   download_datapack: 'Download Datapack',
-  download: 'Download'
+  download: 'Download',
+  download_map_unzip: 'Download Map (Unzip here)',
+  download_texture: 'Download Texture Pack (Don\'t unzip)'
 }
 
 export const DL_TEXTS = {
