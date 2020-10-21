@@ -73,7 +73,10 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(0, 2, 0, 2),
     fontFamily: '微軟正黑體'
   },
-
+  center: {
+    display: 'flex',
+    justifyContent: 'center'
+  }
 }));
 
 
@@ -148,7 +151,10 @@ const PlanetaryThievesPage = () => {
               {get(content, 'preview')}
             </Typography>
           </Grid>
-          <Grid item>
+          <Grid
+            className={classes.center}
+            item
+          >
             <Dropdown
               getSelectedOption={getSelectedMap}
               label={get(content, 'preview')}

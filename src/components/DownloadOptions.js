@@ -22,6 +22,10 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     fontFamily: '微軟正黑體'
+  },
+  center: {
+    display: 'flex',
+    justifyContent: 'center'
   }
 }));
 
@@ -55,14 +59,20 @@ const DownloadOptions = (props) => {
       container
       justify="center"
     >
-      <Grid item>
+      <Grid
+        className={classes.center}
+        item
+      >
         <Dropdown
           getSelectedOption={handleSelectionChange}
           label={downloadLabel}
           options={selectionList}
         />
       </Grid>
-      <Grid item>
+      <Grid
+        className={classes.center}
+        item
+      >
         <Button
           classes={{
             label: classes.text
