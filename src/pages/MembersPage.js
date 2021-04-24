@@ -91,12 +91,12 @@ const MembersPage = () => {
       icon: koumiIcon,
       theme: 'rgba(255, 165, 0, 0.7)'
     },
-    {
-      description: get(content, 'lightDe.description'),
-      name: get(content, 'lightDe.name'),
-      icon: lightDeIcon,
-      theme: 'rgba(191, 63, 127, 0.7)'
-    },
+    // {
+    //   description: get(content, 'lightDe.description'),
+    //   name: get(content, 'lightDe.name'),
+    //   icon: lightDeIcon,
+    //   theme: 'rgba(191, 63, 127, 0.7)'
+    // },
     {
       description: get(content, 'slgame.description'),
       name: get(content, 'slgame.name'),
