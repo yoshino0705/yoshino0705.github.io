@@ -232,17 +232,17 @@ const WerewolfDeluxeMapPage = () => {
   }
 
   const mapDownloadOptions = [
-    { label: '1.16.2', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=4hgXvIJw' },
-    { label: '1.16.1', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=kNSsV4tT' },
-    { label: '1.15.2', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=5UidN6aT' },
-    { label: '1.14.4', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=aNZXGS6Q' }
+    { label: '1.16.2', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-v7-17' },
+    { label: '1.16.1', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-v7-16' },
+    { label: '1.15.2', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-v7-12' },
+    { label: '1.14.4', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-v2' }
   ]
 
   const datapackDownloadOptions = [
-    { label: '1.16.2', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=cSfYExj5' },
-    { label: '1.16.1', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=2vcu8eSW' },
-    { label: '1.15.2', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=79EWdt36' },
-    { label: '1.14.4', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=nGyUCwxt' },
+    { label: '1.16.2', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-datapack-v7-17' },
+    { label: '1.16.1', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-datapack-v7-16' },
+    { label: '1.15.2', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-datapack-v7-12' },
+    { label: '1.14.4', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-datapack-v2' },
   ]
 
   return (
