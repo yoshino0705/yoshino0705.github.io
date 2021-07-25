@@ -232,6 +232,7 @@ const WerewolfDeluxeMapPage = () => {
   }
 
   const mapDownloadOptions = [
+    { label: '1.17.1', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-v7-18' },
     { label: '1.16.2', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-v7-17' },
     { label: '1.16.1', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-v7-16' },
     { label: '1.15.2', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-v7-12' },
@@ -239,6 +240,7 @@ const WerewolfDeluxeMapPage = () => {
   ]
 
   const datapackDownloadOptions = [
+    { label: '1.17.1', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-datapack-v7-18' },
     { label: '1.16.2', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-datapack-v7-17' },
     { label: '1.16.1', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-datapack-v7-16' },
     { label: '1.15.2', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-datapack-v7-12' },
