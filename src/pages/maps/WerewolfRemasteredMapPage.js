@@ -11,6 +11,7 @@ import Gallery from '../../components/Gallery'
 import Page from '../../components/Page'
 import Dropdown from '../../components/Dropdown'
 
+// import TabBoard from '../../components/Tabs/TabBoard'
 
 import snow0 from '../../components/assets/maps/werewolf_dlx/snow/snow0.jpg'
 import snow1 from '../../components/assets/maps/werewolf_dlx/snow/snow1.jpg'
@@ -171,7 +172,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-const WerewolfDeluxeMapPage = () => {
+const WerewolfRemasteredMapPage = () => {
 
   const classes = useStyles()
 
@@ -227,32 +228,24 @@ const WerewolfDeluxeMapPage = () => {
   }
 
   const mapDownloadOptions = [
-    { label: '1.17.1', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-v7-18' },
-    { label: '1.16.2', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-v7-17' },
-    { label: '1.16.1', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-v7-16' },
-    { label: '1.15.2', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-v7-12' },
-    { label: '1.14.4', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-v2' }
+    { label: '1.17.1', value: 'https://dl.orangedox.com/koumi-werewolf-remastered-v1' }
   ]
 
   const datapackDownloadOptions = [
-    { label: '1.17.1', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-datapack-v7-18' },
-    { label: '1.16.2', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-datapack-v7-17' },
-    { label: '1.16.1', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-datapack-v7-16' },
-    { label: '1.15.2', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-datapack-v7-12' },
-    { label: '1.14.4', value: 'https://dl.orangedox.com/koumi-werewolf-dlc-datapack-v2' },
+    { label: '1.17.1', value: 'https://dl.orangedox.com/koumi-werewolf-remastered-dp-v1' }
   ]
 
   return (
     <Page
       className={classes.root}
-      title="werewolf-dlx"
+      title="werewolf-remastered"
     >
       <div className={classes.titleContainer}>
         <Typography
           className={classes.title}
           variant="h1"
         >
-          {get(MAP_NAMES[language.locale], 'werewolf_dlx')}
+          {get(MAP_NAMES[language.locale], 'werewolf_remastered')}
         </Typography>
       </div>
       <div className={classes.galleryContainer}>
@@ -373,4 +366,4 @@ const WerewolfDeluxeMapPage = () => {
   )
 }
 
-export default WerewolfDeluxeMapPage
+export default WerewolfRemasteredMapPage

@@ -26,14 +26,16 @@ const MAP_TITLES_ZH_TW = {
   'werewolf-og': '人狼殺',
   'friedshrimp': '為了炸蝦',
   'werewolf-dlx': '狼人殺旗艦版',
-  'planetary-thieves': '行星盜賊團'
+  'planetary-thieves': '行星盜賊團',
+  'werewolf-remastered': '狼人殺重製版'
 }
 
 const MAP_TITLES_EN_US = {
-  'werewolf-og': 'The Werewolf Game (Mafia)',
+  'werewolf-og': 'Werewolf',
   'friedshrimp': 'For Fried Shrimp',
-  'werewolf-dlx': 'The Werewolf Game: Deluxe Edition',
-  'planetary-thieves': 'Planetary Thieves'
+  'werewolf-dlx': 'Werewolf: Deluxe Edition',
+  'planetary-thieves': 'Planetary Thieves',
+  'werewolf-remastered': 'Werewolf: Remastered',
 }
 
 export const MAP_TITLES = {
@@ -46,14 +48,16 @@ const MAP_ZH_TW = {
   werewolf_og: '人狼殺',
   friedshrimp: '為了炸蝦，我說不定連稽查員都能幹掉',
   werewolf_dlx: '狼人殺：旗艦版',
-  planetary_thieves: '行星盜賊團'
+  planetary_thieves: '行星盜賊團',
+  werewolf_remastered: '狼人殺：重製版'
 }
 
 const MAP_EN_US = {
-  werewolf_og: 'The Werewolf Game (Mafia)',
+  werewolf_og: 'Werewolf',
   friedshrimp: 'If it\'s for fried shrimp, I\'d even defeat the Inspectors',
-  werewolf_dlx: 'The Werewolf Game: Deluxe Edition',
-  planetary_thieves: 'Planetary Thieves'
+  werewolf_dlx: 'Werewolf: Deluxe Edition',
+  planetary_thieves: 'Planetary Thieves',
+  werewolf_remastered: 'Werewolf Remastered'
 }
 
 export const MAP_NAMES = {
