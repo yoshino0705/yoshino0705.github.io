@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.69eda509.chunk.css",
-    "main.js": "/static/js/main.355fb147.chunk.js",
-    "main.js.map": "/static/js/main.355fb147.chunk.js.map",
+    "main.js": "/static/js/main.ab05929e.chunk.js",
+    "main.js.map": "/static/js/main.ab05929e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8016f912.js",
     "runtime-main.js.map": "/static/js/runtime-main.8016f912.js.map",
     "static/css/2.fb346933.chunk.css": "/static/css/2.fb346933.chunk.css",
-    "static/js/2.091029f7.chunk.js": "/static/js/2.091029f7.chunk.js",
-    "static/js/2.091029f7.chunk.js.map": "/static/js/2.091029f7.chunk.js.map",
+    "static/js/2.0a109754.chunk.js": "/static/js/2.0a109754.chunk.js",
+    "static/js/2.0a109754.chunk.js.map": "/static/js/2.0a109754.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.909364b6c9f52be97ff0664792ca547b.js": "/precache-manifest.909364b6c9f52be97ff0664792ca547b.js",
+    "precache-manifest.50ae1ac90fa33deec0ed50f4577d8acc.js": "/precache-manifest.50ae1ac90fa33deec0ed50f4577d8acc.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.fb346933.chunk.css.map": "/static/css/2.fb346933.chunk.css.map",
     "static/css/main.69eda509.chunk.css.map": "/static/css/main.69eda509.chunk.css.map",
-    "static/js/2.091029f7.chunk.js.LICENSE.txt": "/static/js/2.091029f7.chunk.js.LICENSE.txt",
+    "static/js/2.0a109754.chunk.js.LICENSE.txt": "/static/js/2.0a109754.chunk.js.LICENSE.txt",
     "static/media/0.png": "/static/media/0.b8970ebf.png",
     "static/media/alex.jpg": "/static/media/alex.bf723523.jpg",
     "static/media/allen.png": "/static/media/allen.dba7a64f.png",
@@ -52,7 +52,6 @@
     "static/media/hotel5.jfif": "/static/media/hotel5.815895b1.jfif",
     "static/media/hotel6.jfif": "/static/media/hotel6.4f9c2843.jfif",
     "static/media/koumi2.jpg": "/static/media/koumi2.f00fca65.jpg",
-    "static/media/lightDe3.jpg": "/static/media/lightDe3.1bbaa8e4.jpg",
     "static/media/lobby.jfif": "/static/media/lobby.e0c8f603.jfif",
     "static/media/mushroom0.jfif": "/static/media/mushroom0.f1fd069c.jfif",
     "static/media/mushroom1.jfif": "/static/media/mushroom1.a372792a.jfif",
@@ -124,8 +123,8 @@
   "entrypoints": [
     "static/js/runtime-main.8016f912.js",
     "static/css/2.fb346933.chunk.css",
-    "static/js/2.091029f7.chunk.js",
+    "static/js/2.0a109754.chunk.js",
     "static/css/main.69eda509.chunk.css",
-    "static/js/main.355fb147.chunk.js"
+    "static/js/main.ab05929e.chunk.js"
   ]
 }
