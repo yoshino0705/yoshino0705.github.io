@@ -228,11 +228,11 @@ const WerewolfRemasteredMapPage = () => {
   }
 
   const mapDownloadOptions = [
-    { label: '1.17.1', value: 'https://dl.orangedox.com/koumi-werewolf-remastered-v2' }
+    { label: '1.17.1', value: 'https://dl.orangedox.com/koumi-werewolf-remastered-v3' }
   ]
 
   const datapackDownloadOptions = [
-    { label: '1.17.1', value: 'https://dl.orangedox.com/koumi-werewolf-remastered-dp-v2' }
+    { label: '1.17.1', value: 'https://dl.orangedox.com/koumi-werewolf-remastered-dp-v3' }
   ]
 
   return (
