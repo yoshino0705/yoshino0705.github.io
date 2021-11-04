@@ -168,8 +168,7 @@ const WerewolfOGPage = () => {
   }
 
   const mapDownloadOptions = [
-    { label: '1.14.2', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=6xqmesrS' },
-    { label: '1.13.2', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=YWBmnX7K' }
+    { label: '1.14.2', value: 'https://dl.orangedox.com/koumi-werewolf-v6-1' }
   ]
 
   return (

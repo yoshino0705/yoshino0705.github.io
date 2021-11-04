@@ -134,7 +134,7 @@ const FriedshrimpPage = () => {
   }
 
   const mapDownloadOptions = [
-    { label: '1.14.4', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=eGbHxnJI' },
+    { label: '1.14.4', value: 'https://dl.orangedox.com/koumi-friedshrimp-v4-1' },
   ]
 
   return (

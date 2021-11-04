@@ -136,11 +136,11 @@ const PlanetaryThievesPage = () => {
   }
 
   const mapDownloadOptions = [
-    { label: '1.16.3', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=RCmGxHKY' },
+    { label: '1.16.3', value: 'https://dl.orangedox.com/koumi-pa-v2' },
   ]
 
   const texturepackDownloadOptions = [
-    { label: '1.16.3', value: 'https://download.koumifamily.com/index.php?share/file&user=100&sid=AkvSKtmR' },
+    { label: '1.16.3', value: 'https://dl.orangedox.com/koumi-pa-rss-v2' },
   ]
 
   const contentTitles = get(CONTENT_TITLES, language.locale)
