@@ -1,0 +1,32 @@
+.grid {
+  width: 60px;
+  height: 60px;
+  border: var(--grid-border) solid 1px;
+  color: var(--symbol-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24pt;
+  cursor: pointer;
+}
+
+.gridDisabled {
+  cursor: not-allowed;
+}
+
+@media only screen and (min-width: 768px) {
+  .grid {
+    width: 150px;
+    height: 150px;
+    font-size: 80pt;
+    align-items: unset;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .grid {
+    width: 150px;
+    height: 150px;
+    font-size: 80pt;
+  }
+}

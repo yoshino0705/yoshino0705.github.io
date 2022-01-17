@@ -1,0 +1,25 @@
+:root {
+  --app-background: #282c34;
+  --grid-border: seagreen;
+  --symbol-color: #ffffff;
+  --announcer-text: #ffffff;
+  --turn-text: yellow;
+  --reset-button: #91020a;
+  --rewind-button: #320796;
+  --button-border: #ffffff;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--app-background);
+}
+
+.App-link {
+  color: #61dafb;
+}

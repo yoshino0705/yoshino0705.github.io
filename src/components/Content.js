@@ -10,6 +10,7 @@ import WerewolfOGPage from '../pages/maps/WerewolfOGPage'
 import FriedshrimpPage from '../pages/maps/FriedshrimpPage'
 import PlanetaryThievesPage from '../pages/maps/PlanetaryThievesPage'
 import WerewolfRemasteredMapPage from '../pages/maps/WerewolfRemasteredMapPage'
+import TicTacToeGame from './TicTacToe';
 
 const Content = () => {
 
@@ -24,6 +25,7 @@ const Content = () => {
       <Route path="/werewolf-dlx" component={() => <WerewolfDeluxeMapPage />} />
       <Route path="/planetary-thieves" component={() => <PlanetaryThievesPage />} />
       <Route path="/werewolf-remastered" component={() => <WerewolfRemasteredMapPage />} />
+      <Route path="/tictactoe" component={() => <TicTacToeGame />} />
     </Switch >
 
   )
